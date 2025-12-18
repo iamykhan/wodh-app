@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Particle animations for WodhExpertiseTypographyPlus */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(158, 243, 21, 0.8);
+  top: 20%;
+  left: 15%;
+  opacity: 0.4;
+  animation: floatParticle 14s linear infinite;
+}
+
+.particle-delay {
+  top: 70%;
+  left: 60%;
+  background: rgba(91, 45, 220, 0.9);
+  animation-duration: 18s;
+  animation-delay: 2s;
+}
+
+.particle-alt {
+  top: 35%;
+  left: 80%;
+  background: rgba(185, 168, 255, 0.9);
+  animation-duration: 20s;
+  animation-delay: 4s;
+}
+
+.particle-small {
+  width: 4px;
+  height: 4px;
+  top: 55%;
+  left: 30%;
+  background: rgba(158, 243, 21, 0.6);
+  animation-duration: 16s;
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.15;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate3d(12px, -18px, 0);
+    opacity: 0.35;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate3d(-10px, -32px, 0);
+    opacity: 0.1;
+  }
+}
+

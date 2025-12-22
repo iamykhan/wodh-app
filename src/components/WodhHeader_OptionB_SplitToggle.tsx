@@ -20,7 +20,7 @@ const GAME_LINKS = [
 ];
 
 const COMMON_LINKS = [
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about-us" },
   { label: "Contact", href: "/contact" },
 ];
 

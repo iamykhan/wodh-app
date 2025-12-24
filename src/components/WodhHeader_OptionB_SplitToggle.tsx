@@ -22,6 +22,7 @@ const GAME_LINKS = [
 const COMMON_LINKS = [
   { label: "About", href: "/about-us" },
   { label: "Contact", href: "/contact" },
+  { label: "Careers", href: "/careers" },
 ];
 
 const BG = "#0C0722";

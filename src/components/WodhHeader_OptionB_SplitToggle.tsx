@@ -6,10 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 type Mode = "XR" | "Games";
 
 const XR_LINKS = [
-  { label: "XR Studio", href: "#xr-studio" },
-  { label: "Solutions", href: "#xr-solutions" },
-  { label: "Technologies", href: "#tech" },
-  { label: "Projects", href: "#projects" },
+  { label: "Industries", href: "/industries" },
 ];
 
 const GAME_LINKS = [
@@ -65,7 +62,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
       >
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           className="text-xl sm:text-2xl font-extrabold tracking-tight text-white"
         >
           WODH

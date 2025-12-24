@@ -508,7 +508,7 @@ const LIFE_AT_WODH: LifeShot[] = [
   },
 ];
 
-function HeroCover({ onJump, rolesRef, cultureRef }: { onJump: (ref: React.RefObject<HTMLDivElement>) => void; rolesRef: React.RefObject<HTMLDivElement>; cultureRef: React.RefObject<HTMLDivElement>; }) {
+function HeroCover({ onJump, rolesRef, cultureRef }: { onJump: (ref: React.RefObject<HTMLDivElement | null>) => void; rolesRef: React.RefObject<HTMLDivElement | null>; cultureRef: React.RefObject<HTMLDivElement | null>; }) {
   const hybrid = toneClasses("hybrid");
   const xr = toneClasses("xr");
   const games = toneClasses("games");
@@ -792,7 +792,7 @@ function CareersWodhGuildStudioMagazine() {
 
   const selectedRole = useMemo(() => ROLES.find((r) => r.id === selectedRoleId) ?? ROLES[0], [selectedRoleId]);
 
-  function jumpTo(ref: React.RefObject<HTMLDivElement>) {
+  function jumpTo(ref: React.RefObject<HTMLDivElement | null>) {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 

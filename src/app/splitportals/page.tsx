@@ -3734,6 +3734,7 @@ export function SharedPipelineIdea1_TimelineRefinedV2_V8() {
  */
 type PipelineGridFilterV9 = "all" | "xr" | "games";
 type PipelineGridStageIdV9 = "discovery" | "prototype" | "production" | "qa" | "launch" | "support";
+type PipelineToneV9 = "xr" | "games" | "dual";
 
 type PipelineGridFocusV9 = {
   inputs: string[];

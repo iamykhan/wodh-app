@@ -237,7 +237,7 @@ export default function XRServices() {
   const fadeUp = useMemo(
     () => ({
       hidden: { opacity: 0, y: reduceMotion ? 0 : 14 },
-      show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.21, 1, 0.21, 1] } },
+      show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.21, 1, 0.21, 1] as const } },
     }),
     [reduceMotion]
   );

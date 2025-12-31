@@ -19,6 +19,7 @@ const GAME_LINKS = [
 const SERVICE_HUB_LINKS = [
   { label: "Service Hub", href: "/service-hub" },
   { label: "XR Services 357", href: "/xr-services-357" },
+  { label: "Game Services", href: "/gameservicesv3" },
 ];
 
 const COMMON_LINKS = [

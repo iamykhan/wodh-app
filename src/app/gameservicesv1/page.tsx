@@ -966,7 +966,7 @@ function PlatformsDevicesSection() {
         line: "iOS + Android builds with mid-tier constraints in mind.",
         bullets: ["Thermals & memory budgets", "Touch-first UX + controller optional", "Multiple aspect ratios & safe areas"],
         budgets: { fps: "60fps (target)", mem: "Low/Med budgets", build: "Size-aware" },
-        integrations: ["apple", "android", "firebase", "analytics", "crash"],
+        integrations: ["apple", "android", "firebase", "analytics", "crash"] as LogoKey[],
       };
     }
     if (tab === "PC") {
@@ -975,7 +975,7 @@ function PlatformsDevicesSection() {
         line: "PC-ready architecture with performance and input parity.",
         bullets: ["Controller + keyboard/mouse parity", "Steam-friendly build workflows", "Scalable quality settings"],
         budgets: { fps: "60+ fps", mem: "Scalable", build: "Patch-friendly" },
-        integrations: ["steam", "git", "analytics", "crash"],
+        integrations: ["steam", "git", "analytics", "crash"] as LogoKey[],
       };
     }
     if (tab === "Web") {
@@ -984,7 +984,7 @@ function PlatformsDevicesSection() {
         line: "Fast-loading Web builds (WebGL) with UX + performance tuning.",
         bullets: ["Bundle size discipline", "Loading UX polish", "Browser constraints & memory"],
         budgets: { fps: "30–60fps", mem: "Tight", build: "Small bundles" },
-        integrations: ["webgl", "analytics", "crash"],
+        integrations: ["webgl", "analytics", "crash"] as LogoKey[],
       };
     }
     return {
@@ -992,7 +992,7 @@ function PlatformsDevicesSection() {
       line: "Console-ready architecture (or porting support if applicable).",
       bullets: ["Input abstraction", "Performance budgets", "Compliance-aware pipelines"],
       budgets: { fps: "Targeted", mem: "Budgeted", build: "Submission-ready" },
-      integrations: ["git", "jira", "analytics", "crash"],
+      integrations: ["git", "jira", "analytics", "crash"] as LogoKey[],
     };
   }, [tab]);
 

@@ -394,7 +394,7 @@ function CornerGlows() {
 }
 
 /* --------------------------- Cursor Studio Light --------------------------- */
-function useStudioLight(ref: React.RefObject<HTMLElement>, enabled: boolean) {
+function useStudioLight(ref: React.RefObject<HTMLElement | null>, enabled: boolean) {
   useEffect(() => {
     const el = ref.current;
     if (!el || !enabled) return;

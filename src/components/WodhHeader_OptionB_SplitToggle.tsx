@@ -20,6 +20,7 @@ const SERVICE_HUB_LINKS = [
   { label: "Service Hub", href: "/service-hub" },
   { label: "XR Services 357", href: "/xr-services-357" },
   { label: "Game Services", href: "/gameservicesv3" },
+  { label: "3D Art & Design", href: "/3dart-designservicesv1" },
 ];
 
 const COMMON_LINKS = [

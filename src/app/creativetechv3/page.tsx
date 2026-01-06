@@ -494,7 +494,7 @@ function SectionShell({
 ======================================================================================= */
 
 function BackgroundCatalog() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
@@ -535,7 +535,7 @@ function BackgroundCatalog() {
 ======================================================================================= */
 
 export default function CreativeTechServices_ModularProductCatalog() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   // Catalog state
   const [q, setQ] = useState("");

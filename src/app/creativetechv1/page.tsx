@@ -519,7 +519,7 @@ function SectionShell({
 ======================================================================================= */
 
 function BackgroundAtmosphere() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
@@ -634,7 +634,7 @@ function BackgroundAtmosphere() {
 ======================================================================================= */
 
 export default function CreativeTechServicesPage() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const [capHover, setCapHover] = useState<string>(CAPABILITIES[0]?.key ?? "");
   const activeCap = useMemo(
     () => CAPABILITIES.find((c) => c.key === capHover) ?? CAPABILITIES[0],
@@ -1530,7 +1530,7 @@ function MiniSpec({ title, items }: { title: string; items: string[] }) {
 }
 
 function Node({ index }: { index: number }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const delay = index * 0.22;
   return (
     <div className="relative h-9 w-9">

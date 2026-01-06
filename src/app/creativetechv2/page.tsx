@@ -564,7 +564,7 @@ function SectionShell({
 ======================================================================================= */
 
 function BackgroundCinematic() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
@@ -613,7 +613,7 @@ function BackgroundCinematic() {
 ======================================================================================= */
 
 export default function CreativeTechServices_CinematicStoryboard() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const [activeMoment, setActiveMoment] = useState<MomentKey>("webgl");
   const moment = useMemo(() => MOMENTS.find((m) => m.key === activeMoment)!, [activeMoment]);

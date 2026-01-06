@@ -741,7 +741,7 @@ function StoryTimeline() {
           return (
             <motion.div
               key={t.stage}
-              ref={(el) => (refs.current[i] = el)}
+              ref={(el) => { refs.current[i] = el; }}
               className={cx(
                 "relative rounded-[24px] border overflow-hidden",
                 is ? "border-[rgba(67,232,255,.28)] bg-white/10" : "border-white/10 bg-white/5"

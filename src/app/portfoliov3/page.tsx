@@ -182,7 +182,7 @@ function clampText(text: string, max = 84) {
 }
 
 export default function PortfolioCinematicReel() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const [studio, setStudio] = useState<Studio>("All");
   const [activeId, setActiveId] = useState<string>(CASES[0]?.id ?? "xr-training-sim");

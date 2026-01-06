@@ -190,7 +190,7 @@ function clampText(text: string, max = 84) {
 }
 
 export default function PortfolioCaseLibrary() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const [studio, setStudio] = useState<Studio>("All");
   const [sort, setSort] = useState<SortMode>("Featured");
@@ -819,7 +819,7 @@ function FacetDropdown({
   selected: string[];
   onChange: (v: string[]) => void;
 }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const [open, setOpen] = useState(false);
   const [localQ, setLocalQ] = useState("");
   const wrapRef = useRef<HTMLDivElement | null>(null);

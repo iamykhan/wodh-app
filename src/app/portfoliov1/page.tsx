@@ -206,7 +206,7 @@ function clampText(text: string, max = 84) {
 ======================================================================================= */
 
 export default function PortfolioCuratedMuseum() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const [studio, setStudio] = useState<Studio>("All");
   const [q, setQ] = useState("");
@@ -1141,7 +1141,7 @@ function FiltersDrawer(props: {
     onApply,
   } = props;
 
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const panelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

@@ -271,7 +271,7 @@ const PROJECTS: Project[] = [
 ======================================================================================= */
 
 export default function PortfolioSignalMatrix() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const [studio, setStudio] = useState<Studio>("All");
   const [q, setQ] = useState("");

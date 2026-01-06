@@ -294,7 +294,7 @@ const DEEP_DIVES: DeepDive[] = [
 ======================================================================================= */
 
 export default function PortfolioHybridPage() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const [cat, setCat] = useState<Category>("All");
   const [query, setQuery] = useState("");
 

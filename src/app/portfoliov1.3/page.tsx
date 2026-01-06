@@ -163,7 +163,7 @@ const CHAPTERS: Chapter[] = [
 ======================================================================================= */
 
 export default function PortfolioProofStories() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const chapters = useMemo(() => {
     // Premium ordering: featured first, then newest

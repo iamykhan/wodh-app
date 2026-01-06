@@ -316,7 +316,7 @@ const DEEP_DIVES: DeepDive[] = [
 ======================================================================================= */
 
 export default function PortfolioHybridPage() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const [cat, setCat] = useState<Category>("All");
   const [query, setQuery] = useState("");
 
@@ -640,7 +640,7 @@ function SegmentedCategory({
   setCat: (c: Category) => void;
   counts: Record<Category, number>;
 }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const options: Category[] = ["All", "XR", "Games", "3D"];
   const activeIndex = Math.max(0, options.indexOf(cat));
 
@@ -743,7 +743,7 @@ function SearchBox({ query, setQuery }: { query: string; setQuery: (v: string) =
 ======================================================================================= */
 
 function FeaturedCard({ project, index }: { project: Project; index: number }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
   const a = laneAccent(project.category);
   const edge = rgba(a, 0.26);
   const glow = rgba(a, 0.12);
@@ -870,7 +870,7 @@ function OutcomesStrip({ cat }: { cat: Category }) {
 ======================================================================================= */
 
 function CollageGrid({ items }: { items: Project[] }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const grid = useMemo(() => {
     const pattern = [
@@ -1054,7 +1054,7 @@ function MiniPipeline() {
 ======================================================================================= */
 
 function ProofWall({ quotes }: { quotes: Quote[] }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   const marks = [
     { name: "Meta", svg: <LogoMark word="META" /> },
@@ -1141,7 +1141,7 @@ function LogoMark({ word }: { word: string }) {
 ======================================================================================= */
 
 function DeepDives({ items }: { items: DeepDive[] }) {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   return (
     <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">

@@ -24,6 +24,7 @@ const SERVICE_HUB_LINKS = [
 ];
 
 const COMMON_LINKS = [
+  { label: "Portfolio", href: "/portfoliofinale" },
   { label: "About", href: "/about-us" },
   { label: "Contact", href: "/contact" },
   { label: "Careers", href: "/careers" },

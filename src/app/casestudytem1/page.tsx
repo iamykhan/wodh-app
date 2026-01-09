@@ -226,7 +226,7 @@ function IconSpark(props: React.SVGProps<SVGSVGElement>) {
 ======================================================================================= */
 
 export default function PortfolioGameSingle_Racer_VariantA() {
-  const reduceMotion = useReducedMotion();
+  const reduceMotion = useReducedMotion() ?? false;
 
   // Remote “visualization” images (robust fallback included).
   // To guarantee something loads even if these fail, SmartImage swaps to SVG fallback.

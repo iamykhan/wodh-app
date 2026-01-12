@@ -1,0 +1,802 @@
+"use client";
+
+/**
+ * WODH — Mega Menu Header (Refined Variant C) — Single Page Demo
+ * Put this file at:
+ *   Next.js App Router:  app/header-mega/page.tsx
+ * Or Pages Router:      pages/header-mega.tsx
+ *
+ * Requires: TailwindCSS
+ * Optional: framer-motion (used). If you don't want it, tell me and I'll remove.
+ */
+
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
+
+/* --------------------------------- Utils --------------------------------- */
+
+function cn(...classes: Array<string | undefined | null | false>) {
+  return classes.filter(Boolean).join(" ");
+}
+
+type StudioMode = "all" | "xr" | "games";
+
+type NavItem = { label: string; href: string; desc?: string; tag?: string };
+type NavGroup = { label: string; items: NavItem[] };
+
+const NAV: NavGroup[] = [
+  {
+    label: "Services",
+    items: [
+      {
+        label: "XR Development",
+        href: "/services/xr",
+        desc: "Spatial apps, training, simulators, product demos.",
+        tag: "XR",
+      },
+      {
+        label: "Game Development",
+        href: "/services/games",
+        desc: "Full-cycle production, multiplayer, polish, live ops.",
+        tag: "Games",
+      },
+      {
+        label: "3D & Art",
+        href: "/services/3d-art",
+        desc: "Characters, environments, lookdev, cinematic shots.",
+        tag: "3D",
+      },
+      {
+        label: "Creative Tech",
+        href: "/services/creative-tech",
+        desc: "AR, webGL, installations, interactive experiences.",
+        tag: "Creative",
+      },
+    ],
+  },
+  {
+    label: "Portfolio",
+    items: [
+      { label: "All Work (Index)", href: "/portfolio", desc: "Everything we ship, in one place." },
+      { label: "XR Case Studies", href: "/portfolio/xr", desc: "Deployments, training, demos, spatial UI." },
+      { label: "Game Case Studies", href: "/portfolio/games", desc: "Gameplay systems, production, polish." },
+      { label: "3D/Art Portfolio", href: "/portfolio/3d-art", desc: "Visual development, lookdev, renders." },
+    ],
+  },
+  {
+    label: "Company",
+    items: [
+      { label: "About", href: "/about", desc: "Who we are and how we work." },
+      { label: "Team", href: "/team", desc: "The core crew behind the craft." },
+      { label: "Careers", href: "/careers", desc: "Join the studio." },
+    ],
+  },
+  {
+    label: "Insights",
+    items: [
+      { label: "Blog", href: "/insights", desc: "Production notes, launches, learnings." },
+      { label: "R&D", href: "/insights/rd", desc: "Experiments, prototypes, technical writeups." },
+    ],
+  },
+];
+
+const CONTACT: NavItem = { label: "Contact", href: "/contact" };
+
+function studioAccent(studio: StudioMode) {
+  if (studio === "xr")
+    return {
+      name: "XR",
+      glow: "rgba(158, 243, 21, 0.22)",
+      line: "rgba(158, 243, 21, 0.58)",
+      soft: "rgba(158, 243, 21, 0.10)",
+    };
+  if (studio === "games")
+    return {
+      name: "Games",
+      glow: "rgba(91, 45, 220, 0.22)",
+      line: "rgba(91, 45, 220, 0.60)",
+      soft: "rgba(91, 45, 220, 0.10)",
+    };
+  return {
+    name: "All",
+    glow: "rgba(140, 160, 255, 0.16)",
+    line: "rgba(140, 160, 255, 0.40)",
+    soft: "rgba(140, 160, 255, 0.08)",
+  };
+}
+
+function useStickyShadow() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return scrolled;
+}
+
+/* ------------------------------- Page Demo -------------------------------- */
+
+export default function HeaderMegaDemoPage() {
+  const [studio, setStudio] = useState<StudioMode>("all");
+
+  // Hide global header and footer on this page
+  useEffect(() => {
+    const header = document.querySelector('header.fixed, header[class*="fixed"]');
+    const footer = document.querySelector('footer');
+    
+    if (header) {
+      (header as HTMLElement).style.display = 'none';
+    }
+    if (footer) {
+      (footer as HTMLElement).style.display = 'none';
+    }
+    
+    return () => {
+      if (header) {
+        (header as HTMLElement).style.display = '';
+      }
+      if (footer) {
+        (footer as HTMLElement).style.display = '';
+      }
+    };
+  }, []);
+
+  // persist studio mode + allow ?studio=xr|games|all
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const qs = params.get("studio");
+    const fromQS = (qs === "xr" || qs === "games" || qs === "all") ? (qs as StudioMode) : null;
+
+    const fromLS = (window.localStorage.getItem("wodh:studio") as StudioMode | null) ?? null;
+    const pick = fromQS ?? (fromLS === "xr" || fromLS === "games" || fromLS === "all" ? fromLS : null) ?? "all";
+    setStudio(pick);
+  }, []);
+
+  const setStudioPersist = (next: StudioMode) => {
+    setStudio(next);
+    try {
+      window.localStorage.setItem("wodh:studio", next);
+      const url = new URL(window.location.href);
+      url.searchParams.set("studio", next);
+      window.history.replaceState({}, "", url.toString());
+    } catch {}
+  };
+
+  return (
+    <div className="min-h-screen bg-[#070814] text-white">
+      {/* Atmosphere */}
+      <div
+        className="pointer-events-none fixed inset-0 -z-10"
+        style={{
+          background:
+            `radial-gradient(900px 450px at 15% 0%, rgba(91,45,220,0.18), transparent 55%),
+             radial-gradient(900px 520px at 85% 0%, rgba(158,243,21,0.14), transparent 55%),
+             radial-gradient(1200px 700px at 50% 110%, rgba(120,140,255,0.10), transparent 55%),
+             linear-gradient(180deg, #050615 0%, #070814 40%, #070814 100%)`,
+        }}
+      />
+      <Noise />
+
+      <HeaderMegaRefined
+        nav={NAV}
+        contact={CONTACT}
+        studio={studio}
+        setStudio={setStudioPersist}
+      />
+
+      {/* Demo content */}
+      <main className="mx-auto max-w-6xl px-4 pb-24 pt-10">
+        <div className="mb-10">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70">
+            Mega Menu • Refined Variant C • Studio: <span className="text-white/90">{studioAccent(studio).name}</span>
+            <span className="h-1.5 w-1.5 rounded-full" style={{ background: studioAccent(studio).line }} />
+          </div>
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+            Mega menus that feel like a product UI.
+          </h1>
+          <p className="mt-3 max-w-2xl text-white/65">
+            Hover the top-level items (Services, Portfolio, Company, Insights). This version includes:
+            left rail + intent delays + studio-aware highlight + quick actions.
+          </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <Card title="Why this feels premium" text="Structure beats glow: rail, dividers, microcopy, and a calm featured area." />
+          <Card title="No flicker" text="Open delay + close delay + hover bridge to forgive small cursor gaps." />
+          <Card title="Studio-aware" text="XR and Games mode guide emphasis and featured proof without changing layout." />
+          <Card title="Conversion built-in" text="Quick actions in-panel keep CTA reachable without cluttering the header." />
+        </div>
+
+        <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6">
+          <div className="text-sm font-semibold">Scroll space</div>
+          <p className="mt-2 max-w-2xl text-sm text-white/60">
+            This filler exists so you can check sticky blur, shadow, and overall rhythm while scrolling.
+          </p>
+          <div className="mt-6 grid gap-3 md:grid-cols-3">
+            {Array.from({ length: 9 }).map((_, i) => (
+              <div key={i} className="h-28 rounded-2xl border border-white/10 bg-white/5" />
+            ))}
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+/* -------------------------- Refined Mega Menu Header ------------------------ */
+
+type HeaderProps = {
+  nav: NavGroup[];
+  contact: NavItem;
+  studio: StudioMode;
+  setStudio: (s: StudioMode) => void;
+};
+
+function HeaderMegaRefined({ nav, contact, studio, setStudio }: HeaderProps) {
+  const scrolled = useStickyShadow();
+  const accent = studioAccent(studio);
+
+  const [open, setOpen] = useState(false); // mega menu open?
+  const [activeGroup, setActiveGroup] = useState<string | null>(null);
+  const [pinned, setPinned] = useState(false); // click-to-pin for demo & usability
+
+  const openTimer = useRef<number | null>(null);
+  const closeTimer = useRef<number | null>(null);
+
+  const groups = useMemo(() => nav.map((g) => g.label), [nav]);
+
+  const groupData = useMemo(() => {
+    const g = nav.find((x) => x.label === activeGroup) ?? nav[0];
+    return g;
+  }, [nav, activeGroup]);
+
+  const featured = useMemo(() => {
+    if (studio === "xr") {
+      return {
+        kicker: "Featured XR",
+        title: "XR Training Simulator",
+        meta: "Quest • Vision Pro • Pico",
+        href: "/portfolio/xr",
+      };
+    }
+    if (studio === "games") {
+      return {
+        kicker: "Featured Games",
+        title: "Competitive Arena Prototype",
+        meta: "Systems • Netcode • Polish",
+        href: "/portfolio/games",
+      };
+    }
+    return {
+      kicker: "Featured",
+      title: "Cinematic 3D Lookdev",
+      meta: "Art direction • Lighting • Renders",
+      href: "/portfolio/3d-art",
+    };
+  }, [studio]);
+
+  const trustChips = useMemo(() => {
+    if (studio === "xr") return ["Vision Pro", "Quest", "Pico", "Deployment-ready"];
+    if (studio === "games") return ["Unity/Unreal", "Gameplay systems", "Live ops", "Performance QA"];
+    return ["Client-ready", "NDA-friendly", "Production pipeline", "Global delivery"];
+  }, [studio]);
+
+  const studioPrimaryItem = useMemo(() => {
+    // used to highlight the “most relevant” service row when in studio mode
+    if (studio === "xr") return "XR Development";
+    if (studio === "games") return "Game Development";
+    return null;
+  }, [studio]);
+
+  const clearTimers = () => {
+    if (openTimer.current) window.clearTimeout(openTimer.current);
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    openTimer.current = null;
+    closeTimer.current = null;
+  };
+
+  const requestOpen = (label: string) => {
+    clearTimers();
+    // open delay: prevents accidental opens
+    openTimer.current = window.setTimeout(() => {
+      setActiveGroup(label);
+      setOpen(true);
+    }, 110);
+  };
+
+  const requestClose = () => {
+    if (pinned) return; // pinned stays
+    clearTimers();
+    // close delay: forgiveness
+    closeTimer.current = window.setTimeout(() => {
+      setOpen(false);
+      setActiveGroup(null);
+    }, 220);
+  };
+
+  const pinToggle = () => setPinned((p) => !p);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setPinned(false);
+        setOpen(false);
+        setActiveGroup(null);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  return (
+    <header
+      className={cn(
+        "sticky top-0 z-50 border-b border-white/10 backdrop-blur-xl",
+        scrolled ? "bg-[#070814]/84" : "bg-[#070814]/60"
+      )}
+      onMouseLeave={requestClose}
+    >
+      <div className="mx-auto max-w-6xl px-4 py-4">
+        <div className="flex items-center justify-between gap-3">
+          <Brand subtitle="Mega Menu (Refined)" />
+
+          {/* Top-level buttons (desktop) */}
+          <div className="hidden lg:flex items-center gap-2">
+            {groups.map((label) => {
+              const isActive = open && activeGroup === label;
+              return (
+                <button
+                  key={label}
+                  onMouseEnter={() => requestOpen(label)}
+                  onFocus={() => requestOpen(label)}
+                  onClick={() => {
+                    // click pins + opens
+                    setActiveGroup(label);
+                    setOpen(true);
+                    setPinned(true);
+                  }}
+                  aria-expanded={isActive}
+                  className={cn(
+                    "inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs transition",
+                    isActive
+                      ? "border-white/20 bg-white/10 text-white"
+                      : "border-white/10 bg-white/5 text-white/80 hover:bg-white/10"
+                  )}
+                  style={isActive ? { boxShadow: `0 0 44px ${accent.glow}` } : undefined}
+                >
+                  {label}
+                  <ChevronIcon className={cn("h-4 w-4 opacity-80 transition", isActive ? "rotate-180" : "")} />
+                </button>
+              );
+            })}
+
+            <Link
+              href={contact.href}
+              className="ml-2 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/80 hover:bg-white/10"
+            >
+              Contact
+              <ArrowIcon className="h-4 w-4 opacity-75" />
+            </Link>
+          </div>
+
+          {/* Right side */}
+          <div className="flex items-center gap-2">
+            <StudioSwitch studio={studio} setStudio={setStudio} />
+            <CTA studio={studio} />
+
+            {/* Pin indicator (desktop only) */}
+            <button
+              onClick={pinToggle}
+              className={cn(
+                "hidden lg:inline-flex items-center gap-2 rounded-full border px-3 py-2 text-xs transition",
+                pinned ? "border-white/20 bg-white/10 text-white" : "border-white/10 bg-white/5 text-white/70 hover:bg-white/10"
+              )}
+              title="Pin mega menu open"
+            >
+              <PinIcon className="h-4 w-4" />
+              {pinned ? "Pinned" : "Pin"}
+            </button>
+          </div>
+        </div>
+
+        {/* Accent line */}
+        <div
+          className="mt-3 h-px w-full"
+          style={{ background: `linear-gradient(90deg, transparent, ${accent.line}, transparent)` }}
+        />
+      </div>
+
+      {/* Hover bridge: prevents flicker between button and panel */}
+      <div
+        className={cn("pointer-events-none absolute left-0 right-0 top-[72px] h-3", open ? "opacity-100" : "opacity-0")}
+      />
+
+      {/* Mega panel */}
+      <AnimatePresence>
+        {open ? (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.18 }}
+            className="hidden lg:block"
+            onMouseEnter={() => {
+              // keep open while hovering panel
+              clearTimers();
+              setOpen(true);
+            }}
+            onMouseLeave={requestClose}
+          >
+            <div className="mx-auto max-w-6xl px-4 pb-4">
+              <div
+                className="overflow-hidden rounded-3xl border border-white/10 bg-[#0a0b1c]/92 backdrop-blur-xl"
+                style={{
+                  boxShadow: `0 0 0 1px rgba(255,255,255,0.06), 0 0 70px ${accent.glow}`,
+                }}
+              >
+                <div className="grid grid-cols-12">
+                  {/* Left rail */}
+                  <div className="col-span-3 border-r border-white/10 bg-white/[0.03] p-4">
+                    <div className="mb-3 text-[11px] font-semibold tracking-wide text-white/55">
+                      Navigation
+                    </div>
+                    <div className="space-y-2">
+                      {groups.map((label) => {
+                        const active = activeGroup === label || (!activeGroup && label === nav[0]?.label);
+                        return (
+                          <button
+                            key={label}
+                            onMouseEnter={() => requestOpen(label)}
+                            onFocus={() => requestOpen(label)}
+                            onClick={() => {
+                              setActiveGroup(label);
+                              setOpen(true);
+                              setPinned(true);
+                            }}
+                            className={cn(
+                              "w-full rounded-2xl border px-3 py-2 text-left text-sm transition",
+                              active
+                                ? "border-white/20 bg-white/10 text-white"
+                                : "border-white/10 bg-white/5 text-white/70 hover:bg-white/10 hover:text-white"
+                            )}
+                            style={active ? { boxShadow: `0 0 40px ${accent.glow}` } : undefined}
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="font-semibold">{label}</span>
+                              <span className="text-[10px] text-white/45">↳</span>
+                            </div>
+                            <div className="mt-0.5 text-[11px] text-white/50">
+                              {label === "Services"
+                                ? "Capabilities & production"
+                                : label === "Portfolio"
+                                ? "Proof & case studies"
+                                : label === "Company"
+                                ? "People & story"
+                                : "Writing & R&D"}
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-3">
+                      <div className="text-[11px] text-white/55">Studio mode</div>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {trustChips.slice(0, 3).map((t) => (
+                          <span
+                            key={t}
+                            className="rounded-full border border-white/10 bg-white/5 px-2 py-1 text-[11px] text-white/70"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Middle: primary links */}
+                  <div className="col-span-6 p-5">
+                    <div className="mb-3 flex items-center justify-between">
+                      <div className="text-[11px] font-semibold tracking-wide text-white/55">
+                        {groupData.label}
+                      </div>
+                      <div className="text-[11px] text-white/45">
+                        Hover = preview • Click = pin • Esc = close
+                      </div>
+                    </div>
+
+                    <div className="grid gap-2">
+                      {groupData.items.map((it) => {
+                        const studioRelevant =
+                          groupData.label === "Services" &&
+                          studioPrimaryItem &&
+                          it.label === studioPrimaryItem;
+
+                        return (
+                          <Link
+                            key={it.href}
+                            href={it.href}
+                            className={cn(
+                              "group rounded-2xl border px-4 py-3 transition",
+                              studioRelevant
+                                ? "border-white/20 bg-white/10"
+                                : "border-white/10 bg-white/5 hover:bg-white/10"
+                            )}
+                            style={
+                              studioRelevant
+                                ? { boxShadow: `0 0 60px ${accent.glow}` }
+                                : undefined
+                            }
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <div className="text-sm font-semibold">{it.label}</div>
+                                {it.tag ? (
+                                  <span
+                                    className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] text-white/65"
+                                    style={
+                                      studioRelevant
+                                        ? { background: accent.soft, borderColor: "rgba(255,255,255,0.14)" }
+                                        : undefined
+                                    }
+                                  >
+                                    {it.tag}
+                                  </span>
+                                ) : null}
+                                {studioRelevant ? (
+                                  <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] text-white/70">
+                                    Recommended
+                                  </span>
+                                ) : null}
+                              </div>
+                              <ArrowIcon className="h-4 w-4 opacity-70 transition group-hover:opacity-100" />
+                            </div>
+
+                            {it.desc ? <div className="mt-1 text-[11px] text-white/55">{it.desc}</div> : null}
+
+                            {/* subtle underline accent on hover */}
+                            <div
+                              className="mt-3 h-px w-full scale-x-0 origin-left transition group-hover:scale-x-100"
+                              style={{ background: `linear-gradient(90deg, transparent, ${accent.line}, transparent)` }}
+                            />
+                          </Link>
+                        );
+                      })}
+                    </div>
+
+                    {/* Quick actions row (bottom) */}
+                    <div className="mt-4 flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 p-3">
+                      <span className="text-[11px] text-white/55">Quick actions</span>
+                      <Link
+                        href="/contact"
+                        className="ml-auto inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-2 text-xs font-semibold hover:bg-white/15"
+                        style={{ boxShadow: `0 0 50px ${accent.glow}` }}
+                      >
+                        Start a Project <ArrowIcon className="h-4 w-4" />
+                      </Link>
+                      <Link
+                        href="/portfolio"
+                        className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold text-white/85 hover:bg-white/10"
+                      >
+                        View All Work
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Right: Featured + proof */}
+                  <div className="col-span-3 border-l border-white/10 p-5">
+                    <div className="mb-3 text-[11px] font-semibold tracking-wide text-white/55">
+                      Featured
+                    </div>
+
+                    <Link
+                      href={featured.href}
+                      className="group block rounded-3xl border border-white/10 bg-white/5 p-4 hover:bg-white/10"
+                      style={{ boxShadow: `0 0 60px ${accent.glow}` }}
+                    >
+                      <div className="text-[11px] text-white/60">{featured.kicker}</div>
+                      <div className="mt-2 text-base font-semibold">{featured.title}</div>
+                      <div className="mt-1 text-sm text-white/65">{featured.meta}</div>
+
+                      <div
+                        className="mt-4 h-px w-full"
+                        style={{ background: `linear-gradient(90deg, transparent, ${accent.line}, transparent)` }}
+                      />
+
+                      <div className="mt-3 inline-flex items-center gap-2 text-xs text-white/85">
+                        Explore <ArrowIcon className="h-4 w-4 opacity-80 group-hover:opacity-100" />
+                      </div>
+                    </Link>
+
+                    <div className="mt-4">
+                      <div className="text-[11px] text-white/55">Trust chips</div>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {trustChips.map((t) => (
+                          <span
+                            key={t}
+                            className="rounded-full border border-white/10 bg-white/5 px-2 py-1 text-[11px] text-white/70"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-3 text-[11px] text-white/55">
+                      Tip: Later you can rotate this card via CMS (latest case study, featured capability, or proof).
+                    </div>
+
+                    {/* Pin hint */}
+                    <div className="mt-4 flex items-center gap-2 text-[11px] text-white/50">
+                      <span className="h-1.5 w-1.5 rounded-full" style={{ background: accent.line }} />
+                      Click a group to pin open
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Panel footer strip */}
+              <div className="mt-3 flex items-center justify-between text-[11px] text-white/55">
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                    <span className="h-1.5 w-1.5 rounded-full" style={{ background: accent.line }} />
+                    Studio: <span className="text-white/80">{accent.name}</span>
+                  </span>
+                  <span className="hidden xl:inline">•</span>
+                  <span className="hidden xl:inline">Left rail + microcopy + featured proof = “enterprise header” feel</span>
+                </div>
+
+                <button
+                  onClick={() => {
+                    setPinned(false);
+                    setOpen(false);
+                    setActiveGroup(null);
+                  }}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 hover:bg-white/10"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+    </header>
+  );
+}
+
+/* ------------------------------ Shared UI --------------------------------- */
+
+function Brand({ subtitle }: { subtitle?: string }) {
+  return (
+    <Link href="/" className="group inline-flex items-center gap-3">
+      <div className="relative h-9 w-9 overflow-hidden rounded-xl border border-white/10 bg-white/5">
+        <div
+          className="absolute inset-0 opacity-80"
+          style={{
+            background:
+              "radial-gradient(10px 10px at 30% 30%, rgba(255,255,255,0.35), transparent 55%), radial-gradient(18px 18px at 70% 60%, rgba(255,255,255,0.18), transparent 60%)",
+          }}
+        />
+        <div className="relative grid h-full w-full place-items-center">
+          <span className="text-xs font-semibold tracking-widest">W</span>
+        </div>
+      </div>
+      <div className="leading-tight">
+        <div className="text-sm font-semibold tracking-tight">Wodh</div>
+        {subtitle ? <div className="text-[11px] text-white/55">{subtitle}</div> : null}
+      </div>
+    </Link>
+  );
+}
+
+function CTA({ studio }: { studio: StudioMode }) {
+  const accent = studioAccent(studio);
+  return (
+    <div className="flex items-center gap-2">
+      <Link
+        href="/contact"
+        className="hidden md:inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/80 hover:bg-white/10"
+      >
+        <MailIcon className="h-4 w-4" />
+        Email
+      </Link>
+
+      <Link
+        href="/contact"
+        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold hover:bg-white/15"
+        style={{
+          boxShadow: `0 0 0 1px rgba(255,255,255,0.06), 0 0 40px ${accent.glow}`,
+        }}
+      >
+        Start a Project
+        <ArrowIcon className="h-4 w-4" />
+      </Link>
+    </div>
+  );
+}
+
+function StudioSwitch({ studio, setStudio }: { studio: StudioMode; setStudio: (s: StudioMode) => void }) {
+  const accent = studioAccent(studio);
+  return (
+    <div className="hidden sm:inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+      {(["all", "xr", "games"] as StudioMode[]).map((m) => {
+        const active = studio === m;
+        const label = m === "all" ? "All" : m === "xr" ? "XR" : "Games";
+        return (
+          <button
+            key={m}
+            onClick={() => setStudio(m)}
+            className={cn(
+              "rounded-full px-3 py-1.5 text-xs transition",
+              active ? "bg-white/12 text-white" : "text-white/70 hover:text-white"
+            )}
+            style={active ? { boxShadow: `0 0 26px ${accent.glow}` } : undefined}
+          >
+            {label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function Card({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+      <div className="text-sm font-semibold">{title}</div>
+      <p className="mt-2 text-sm text-white/65">{text}</p>
+      <div className="mt-5 h-20 rounded-2xl border border-white/10 bg-white/5" />
+    </div>
+  );
+}
+
+/* ------------------------------ Noise Layer -------------------------------- */
+
+function Noise() {
+  return (
+    <div
+      className="pointer-events-none fixed inset-0 -z-10 opacity-[0.08]"
+      style={{
+        backgroundImage:
+          "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E\")",
+      }}
+    />
+  );
+}
+
+/* --------------------------------- Icons ---------------------------------- */
+
+function ChevronIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none">
+      <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+function ArrowIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none">
+      <path d="M7 17L17 7" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      <path d="M9 7h8v8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+function MailIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none">
+      <path d="M4 7.5h16v9H4v-9Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+      <path d="M4.8 8.2 12 13l7.2-4.8" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+function PinIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none">
+      <path d="M9 4h6l1 6-2 2v6l-2-2-2 2v-6l-2-2 1-6Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+    </svg>
+  );
+}

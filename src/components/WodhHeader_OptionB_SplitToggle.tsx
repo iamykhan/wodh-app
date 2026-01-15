@@ -23,6 +23,20 @@ const SERVICE_HUB_LINKS = [
   { label: "3D Art & Design", href: "/3dart-designservicesv1" },
 ];
 
+const SINGLES_LINKS = [
+  { label: "Game C-Study", href: "/casestudytem1" },
+  { label: "Xrcasestudy", href: "/xrcasestudyv2" },
+];
+
+const THREEDART_CSS_LINKS = [
+  { label: "3D Case Study Single V1", href: "/3dcasestudysinglev1" },
+  { label: "3D Case Study Single VD", href: "/3dcasestudysinglevd" },
+  { label: "3D Case Study Single VE", href: "/3dcasestudysingleve" },
+  { label: "3D Case Study Single VF", href: "/3dcasestudysinglevf" },
+  { label: "Header Ideas", href: "/headerideas" },
+  { label: "Footer Variants", href: "/footervariants" },
+];
+
 const COMMON_LINKS = [
   { label: "Portfolio", href: "/portfoliofinale" },
   { label: "About", href: "/about-us" },
@@ -41,6 +55,10 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [serviceHubOpen, setServiceHubOpen] = useState(false);
   const serviceHubRef = useRef<HTMLDivElement>(null);
+  const [singlesOpen, setSinglesOpen] = useState(false);
+  const singlesRef = useRef<HTMLDivElement>(null);
+  const [threedartcssOpen, setThreedartcssOpen] = useState(false);
+  const threedartcssRef = useRef<HTMLDivElement>(null);
 
   const links = useMemo(
     () => [...(mode === "XR" ? XR_LINKS : GAME_LINKS), ...COMMON_LINKS],
@@ -60,16 +78,22 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
       if (serviceHubRef.current && !serviceHubRef.current.contains(event.target as Node)) {
         setServiceHubOpen(false);
       }
+      if (singlesRef.current && !singlesRef.current.contains(event.target as Node)) {
+        setSinglesOpen(false);
+      }
+      if (threedartcssRef.current && !threedartcssRef.current.contains(event.target as Node)) {
+        setThreedartcssOpen(false);
+      }
     };
 
-    if (serviceHubOpen) {
+    if (serviceHubOpen || singlesOpen || threedartcssOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [serviceHubOpen]);
+  }, [serviceHubOpen, singlesOpen, threedartcssOpen]);
 
   const activeColor = mode === "XR" ? NEON : VIOLET;
 
@@ -222,6 +246,178 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                         key={link.href}
                         href={link.href}
                         onClick={() => setServiceHubOpen(false)}
+                        className="block px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 transition-colors"
+                        style={{
+                          borderTop: index > 0 ? `1px solid ${BORDER}40` : "none",
+                        }}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span>{link.label}</span>
+                          <span
+                            className="text-xs opacity-50"
+                            style={{ color: activeColor }}
+                          >
+                            →
+                          </span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Singles Dropdown */}
+          <div ref={singlesRef} className="relative">
+            <button
+              onClick={() => setSinglesOpen(!singlesOpen)}
+              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+            >
+              Singles
+              <span
+                className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                style={{
+                  background: `linear-gradient(90deg, ${activeColor}, transparent)`,
+                }}
+              />
+              <svg
+                className={`ml-1 inline-block h-3 w-3 transition-transform duration-200 ${
+                  singlesOpen ? "rotate-180" : ""
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <AnimatePresence>
+              {singlesOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-0 mt-2 min-w-[200px] rounded-2xl border backdrop-blur-xl overflow-hidden"
+                  style={{
+                    backgroundColor: "rgba(15,10,38,0.95)",
+                    borderColor: BORDER,
+                    boxShadow: `0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px ${BORDER}40, inset 0 1px 0 rgba(255,255,255,0.1)`,
+                  }}
+                >
+                  {/* Glow effect */}
+                  <div
+                    className="absolute -left-20 -top-20 h-40 w-40 rounded-full opacity-30 blur-3xl"
+                    style={{ backgroundColor: activeColor }}
+                  />
+                  
+                  {/* Top accent line */}
+                  <div
+                    className="absolute left-0 right-0 top-0 h-px opacity-60"
+                    style={{
+                      background: `linear-gradient(90deg, transparent, ${activeColor}60, transparent)`,
+                    }}
+                  />
+
+                  <div className="relative">
+                    {SINGLES_LINKS.map((link, index) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setSinglesOpen(false)}
+                        className="block px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 transition-colors"
+                        style={{
+                          borderTop: index > 0 ? `1px solid ${BORDER}40` : "none",
+                        }}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span>{link.label}</span>
+                          <span
+                            className="text-xs opacity-50"
+                            style={{ color: activeColor }}
+                          >
+                            →
+                          </span>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* 3D Art CSS Dropdown */}
+          <div ref={threedartcssRef} className="relative">
+            <button
+              onClick={() => setThreedartcssOpen(!threedartcssOpen)}
+              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+            >
+              3dartCSS
+              <span
+                className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                style={{
+                  background: `linear-gradient(90deg, ${activeColor}, transparent)`,
+                }}
+              />
+              <svg
+                className={`ml-1 inline-block h-3 w-3 transition-transform duration-200 ${
+                  threedartcssOpen ? "rotate-180" : ""
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <AnimatePresence>
+              {threedartcssOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-0 mt-2 min-w-[200px] rounded-2xl border backdrop-blur-xl overflow-hidden"
+                  style={{
+                    backgroundColor: "rgba(15,10,38,0.95)",
+                    borderColor: BORDER,
+                    boxShadow: `0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px ${BORDER}40, inset 0 1px 0 rgba(255,255,255,0.1)`,
+                  }}
+                >
+                  {/* Glow effect */}
+                  <div
+                    className="absolute -left-20 -top-20 h-40 w-40 rounded-full opacity-30 blur-3xl"
+                    style={{ backgroundColor: activeColor }}
+                  />
+                  
+                  {/* Top accent line */}
+                  <div
+                    className="absolute left-0 right-0 top-0 h-px opacity-60"
+                    style={{
+                      background: `linear-gradient(90deg, transparent, ${activeColor}60, transparent)`,
+                    }}
+                  />
+
+                  <div className="relative">
+                    {THREEDART_CSS_LINKS.map((link, index) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setThreedartcssOpen(false)}
                         className="block px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 transition-colors"
                         style={{
                           borderTop: index > 0 ? `1px solid ${BORDER}40` : "none",

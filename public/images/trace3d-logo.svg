@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- T letter outline - thin geometric style - mono color -->
+  <!-- Horizontal top bar -->
+  <path d="M 5 10 L 40 10" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  <!-- Vertical stem centered -->
+  <path d="M 22.5 10 L 22.5 50" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  <!-- Trace text next to T -->
+  <text x="55" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff" letter-spacing="1">Trace</text>
+</svg>

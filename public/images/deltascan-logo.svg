@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- DELTA SCAN text - mono color -->
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+    DELTA SCAN
+  </text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="9" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Engineering Intelligence</text>
+</svg>

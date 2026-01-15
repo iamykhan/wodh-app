@@ -216,11 +216,6 @@ const WodhTestimonials_LoudHero_V2_A_UnderButtons_Final: React.FC = () => {
               </div>
             </div>
 
-            {/* auto/manual hint */}
-            <div className="mt-2 text-[11px] text-[#6E6E90]">
-              {" "}
-              {isManual ? "Manual mode" : isHovered ? "Paused" : "Auto-rotating"}{" "}
-            </div>
           </div>
 
           {/* RIGHT: Big photo + long review card */}
@@ -322,7 +317,6 @@ const WodhTestimonials_LoudHero_V2_A_UnderButtons_Final: React.FC = () => {
               {" "}
               Teams building with Wodh{" "}
             </span>
-            <span className="text-[11px] text-[#6E6E90]"> Auto-scrolling </span>
           </div>
           <div className="relative overflow-hidden">
             {/* edge fades */}

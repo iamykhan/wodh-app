@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 import { motion } from "framer-motion";
 
@@ -52,54 +52,125 @@ const logos = [
 
   {
 
-    name: "Meta",
-
-    src: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Meta_Platforms_Inc._logo.svg",
-
-  }, // official Meta mark :contentReference[oaicite:1]{index=1}
-
-  {
-
-    name: "Microsoft",
-
-    src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-
-  }, // Microsoft public-domain logo :contentReference[oaicite:2]{index=2}
-
-  {
-
-    name: "Sony",
-
-    src: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Sony_logo.svg",
-
-  }, // common Sony wordmark
-
-  {
-
     name: "Unity",
 
     src: "https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg",
 
-  }, // Unity official logo :contentReference[oaicite:3]{index=3}
+    invert: true, // Unity logo needs to be inverted for dark background
+
+  }, // Unity official logo
 
   {
 
     name: "Unreal Engine",
 
-    src: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Unreal_Engine_Logo.svg",
+    src: "", // Text only, no image
 
-  }, // Unreal logo :contentReference[oaicite:4]{index=4}
+    textOnly: true, // Display as text only
+
+  }, // Unreal logo
 
   {
 
-    name: "Niantic",
+    name: "Trace3D",
 
-    src: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Niantic_logo.svg",
+    src: "/images/trace3d-logo.svg",
+
+    invert: false, // Keep original colors
+
+  },
+
+  {
+
+    name: "AvaSci",
+
+    src: "/images/avasci-logo.svg",
+
+    invert: false, // Keep original colors
+
+  },
+
+  {
+
+    name: "Delta Scan",
+
+    src: "/images/deltascan-logo.svg",
+
+    invert: false, // Keep original colors
+
+  },
+
+  {
+
+    name: "HAKI",
+
+    src: "", // Text only, no image
+
+    textOnly: true, // Display as text only
+
+  },
+
+  {
+
+    name: "Castix LLC",
+
+    src: "/images/castix-logo.svg",
+
+    invert: false, // Keep original colors
+
+  },
+
+  {
+
+    name: "Bit Planet Games",
+
+    src: "/images/bitplanetgames-logo.svg",
+
+    invert: false, // Keep original colors
 
   },
 
 ];
 
+
+// Logo item component with error handling
+const LogoItem: React.FC<{ logo: { name: string; src: string; invert?: boolean; textOnly?: boolean }; index: number }> = ({ logo, index }) => {
+  const [imageError, setImageError] = useState(false);
+
+  // If textOnly flag is set, always show text
+  if (logo.textOnly || !logo.src) {
+    return (
+      <div
+        key={`${logo.name}-${index}`}
+        className="shrink-0 opacity-80 hover:opacity-100 transition"
+      >
+        <span className="text-xs sm:text-sm font-semibold text-white/90 whitespace-nowrap">
+          {logo.name}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <div
+      key={`${logo.name}-${index}`}
+      className="shrink-0 opacity-80 hover:opacity-100 transition"
+    >
+      {imageError ? (
+        <span className="text-xs sm:text-sm font-semibold text-white/90 whitespace-nowrap">
+          {logo.name}
+        </span>
+      ) : (
+        <img
+          src={logo.src}
+          alt={logo.name}
+          onError={() => setImageError(true)}
+          className={`h-7 sm:h-8 md:h-9 w-auto opacity-90 hover:opacity-100 transition ${logo.invert ? 'brightness-0 invert' : ''}`}
+        />
+      )}
+    </div>
+  );
+};
 
 
 const HeroSection_P1_Revamp_Galaxy: React.FC = () => {
@@ -616,25 +687,7 @@ const HeroSection_P1_Revamp_Galaxy: React.FC = () => {
 
               {[...logos, ...logos].map((l, i) => (
 
-                <div
-
-                  key={`${l.name}-${i}`}
-
-                  className="shrink-0 opacity-80 hover:opacity-100 transition"
-
-                >
-
-                  <img
-
-                    src={l.src}
-
-                    alt={l.name}
-
-                    className="h-7 sm:h-8 md:h-9 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition"
-
-                  />
-
-                </div>
+                <LogoItem key={`${l.name}-${i}`} logo={l} index={i} />
 
               ))}
 

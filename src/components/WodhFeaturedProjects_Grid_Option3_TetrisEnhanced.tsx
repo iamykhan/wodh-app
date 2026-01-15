@@ -17,38 +17,43 @@ type Project = {
   platform: string;
   country: string;
   flagCode: string;
+  videoUrl?: string; // Optional local video background
+  youtubeId?: string; // Optional YouTube video ID for background
+  wistiaId?: string; // Optional Wistia video ID for background
 };
 
 const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "TraceAR City Portal",
-    bigTitle: "TRACEAR",
-    subtitle: "CITY PORTAL",
+    title: "Trace3D AR Platform",
+    bigTitle: "TRACE",
+    subtitle: "AR PLATFORM",
     category: "XR",
     year: "2025",
-    tagline: "City-scale AR layered calmly onto real streets.",
+    tagline: "Extend Reality for your Brand, Space, Product & Customers.",
     description:
-      "A persistent XR framework for navigation, retail and storytelling that feels like a quiet digital skin over the city.",
-    engine: "Unity · AR Foundation",
-    platform: "iOS · Android · On-site kiosks",
+      "Bring immersive AR experiences to life instantly. Create, publish and scale AR content — turning months of effort into minutes with the world's best platform for creating AR experiences.",
+    engine: "ARKit · ARCore · WebXR",
+    platform: "iOS · Android · Vision Pro · Quest",
     country: "United States",
     flagCode: "us",
+    videoUrl: "/videos/trace3d-hero.mp4",
   },
   {
     id: 2,
-    title: "Neon Drift Arena",
-    bigTitle: "NEON",
-    subtitle: "DRIFT ARENA",
+    title: "Project Racer",
+    bigTitle: "PROJECT RACER",
+    subtitle: "ARCADE RACING",
     category: "Game",
     year: "2024",
-    tagline: "Competitive neon racing with tight, replayable sessions.",
+    tagline: "Competitive racing with tight, replayable sessions.",
     description:
       "Multiplayer-ready arcade racing with reactive tracks, precise controls and a clean, console-inspired interface.",
     engine: "Unity",
     platform: "PC · Console (Prototype)",
     country: "Denmark",
     flagCode: "dk",
+    youtubeId: "TD-OLJihG90",
   },
   {
     id: 3,
@@ -79,6 +84,7 @@ const PROJECTS: Project[] = [
     platform: "Quest · Mobile · WebXR",
     country: "United Arab Emirates",
     flagCode: "ae",
+    wistiaId: "cxh8gmitbw",
   },
 ];
 
@@ -122,7 +128,43 @@ function ProjectCardTetris({
       <div className={`relative min-h-[200px] ${paddingClass}`}>
         {/* Background */}
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2A1E55] via-[#0C0722] to-[#0A061A]" />
+          {/* Local video background if available */}
+          {project.videoUrl && (
+            <video
+              className="absolute inset-0 h-full w-full object-cover opacity-70"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={project.videoUrl} type="video/mp4" />
+            </video>
+          )}
+          {/* YouTube video background if available */}
+          {project.youtubeId && (
+            <div className="absolute inset-0 overflow-hidden">
+              <iframe
+                className="absolute inset-0 w-full h-full opacity-80 scale-150"
+                src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${project.youtubeId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`}
+                title="Background video"
+                allow="autoplay; encrypted-media"
+                frameBorder="0"
+              />
+            </div>
+          )}
+          {/* Wistia video background if available */}
+          {project.wistiaId && (
+            <div className="absolute inset-0 overflow-hidden">
+              <iframe
+                className="absolute inset-0 w-full h-full opacity-80 scale-150"
+                src={`https://fast.wistia.net/embed/iframe/${project.wistiaId}?autoPlay=true&silentAutoPlay=true&muted=true&endVideoBehavior=loop&controlsVisibleOnLoad=false&playbar=false&smallPlayButton=false&volumeControl=false&fullscreenButton=false&qualityControl=false&playbackRateControl=false&settingsControl=false`}
+                title="Background video"
+                allow="autoplay; encrypted-media"
+                frameBorder="0"
+              />
+            </div>
+          )}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2A1E55]/70 via-[#0C0722]/60 to-[#0A061A]/70" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_0%,#9EF31522,transparent_60%),radial-gradient(circle_at_80%_100%,#5B2DDC44,transparent_60%)]" />
           <div className="absolute inset-0 opacity-30">
             <div className="h-full w-full bg-[linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:26px_26px]" />

@@ -1,0 +1,601 @@
+🎨 DALL-E THUMBNAIL PROMPTS
+================================================================================
+
+Copy each prompt into ChatGPT with DALL-E to generate thumbnails.
+Save generated images to: /public/images/thumbnails/[slug].jpg
+
+================================================================================
+1. TraceAR City Portal
+Save as: /public/images/thumbnails/trace3d-city-portal.jpg
+================================================================================
+
+Professional portfolio thumbnail for "TraceAR City Portal": City-scale AR navigation overlaying digital information on streets. 
+
+Scene elements: Modern city street with glass buildings, Holographic AR overlay showing navigation arrows floating in air, Person holding smartphone with AR interface visible, Digital store signs and waypoints hovering above real buildings, Blue/cyan AR elements contrasting with warm city lighting
+
+Style: Futuristic urban, cinematic lighting, technological overlay aesthetic
+Mood: Innovative, helpful, seamlessly blending digital and physical
+Color palette: Warm city amber + cool cyan AR elements
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+2. HAKI Scaffolding VR
+Save as: /public/images/thumbnails/haki-scaffolding-vr.jpg
+================================================================================
+
+Professional portfolio thumbnail for "HAKI Scaffolding VR": VR industrial safety training for scaffolding assembly. 
+
+Scene elements: Person wearing VR headset in industrial setting, Virtual scaffolding structure being assembled, Construction safety elements (hard hat, safety harness), Step-by-step assembly guides floating in VR space, Industrial warehouse or construction site background
+
+Style: Industrial training, professional, safety-focused
+Mood: Educational, professional, safety-conscious
+Color palette: Industrial grey + safety orange/yellow + VR blue accents
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+3. Point Cloud Mesh Generation
+Save as: /public/images/thumbnails/point-cloud-mesh-generation.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Point Cloud Mesh Generation": LiDAR scanning converting points into 3D meshes in real-time. 
+
+Scene elements: Dense point cloud data visualized as colored dots, Points transforming into solid 3D mesh surface, LiDAR scanning beams emanating from device, Room or environment being scanned and reconstructed, Technical data visualization aesthetic
+
+Style: Scientific visualization, data-driven, technical
+Mood: Cutting-edge technology, precision, transformation
+Color palette: Rainbow point cloud colors + wireframe blue + solid mesh grey
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+4. TopDown VR
+Save as: /public/images/thumbnails/topdown-vr.jpg
+================================================================================
+
+Professional portfolio thumbnail for "TopDown VR": God-game VR where player looks down at miniature world. 
+
+Scene elements: Floating diorama-style miniature world on table, Giant hands reaching down to interact with tiny buildings, VR headset wearer viewed from above, Tiny characters and structures in strategic game layout, Ethereal lighting from above
+
+Style: Fantasy strategy, tabletop gaming, immersive VR
+Mood: Powerful, strategic, whimsical god-perspective
+Color palette: Warm miniature world + purple VR environment
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+5. WebGL Rocket Simulation
+Save as: /public/images/thumbnails/webgl-rocket-simulation.jpg
+================================================================================
+
+Professional portfolio thumbnail for "WebGL Rocket Simulation": Educational browser-based rocket physics and orbital mechanics. 
+
+Scene elements: Rocket launching with detailed exhaust plume, Orbital trajectory lines around Earth, Physics equations and trajectory data overlaid, Browser window frame showing web application, Educational diagram aesthetic with labels
+
+Style: Educational scientific illustration, NASA-inspired
+Mood: Educational, inspiring, scientifically accurate
+Color palette: Space black + rocket white/orange + trajectory green/blue
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+6. Zombie Game VR
+Save as: /public/images/thumbnails/zombie-game-vr.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Zombie Game VR": Terrifying VR zombie shooter with realistic weapons. 
+
+Scene elements: First-person view holding shotgun in VR, Zombies emerging from darkness, Abandoned urban environment with debris, Muzzle flash and shell casings, Atmospheric fog and horror lighting
+
+Style: Horror survival, intense action, atmospheric
+Mood: Terrifying, intense, survival adrenaline
+Color palette: Dark shadows + blood red + muzzle flash orange
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+7. VR Physical Keyboard
+Save as: /public/images/thumbnails/vr-physical-keyboard.jpg
+================================================================================
+
+Professional portfolio thumbnail for "VR Physical Keyboard": VR productivity with passthrough showing real keyboard. 
+
+Scene elements: VR headset wearer at desk, Physical keyboard visible through passthrough, Virtual monitors floating in VR space, Hands typing with overlay highlighting keys, Modern workspace environment
+
+Style: Productivity tech, clean modern aesthetic
+Mood: Productive, seamless, professional workflow
+Color palette: Clean white workspace + subtle VR blue overlays
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+8. VR Fall Guys
+Save as: /public/images/thumbnails/vr-fall-guys.jpg
+================================================================================
+
+Professional portfolio thumbnail for "VR Fall Guys": Chaotic VR party game with physics-based bean characters. 
+
+Scene elements: Colorful bean characters racing on obstacle course, Physics-based chaos with characters tumbling, Vibrant candy-colored environment, Spinning obstacles and platforms, First-person VR perspective of the chaos
+
+Style: Playful party game, cartoon physics, vibrant
+Mood: Fun, chaotic, hilarious multiplayer energy
+Color palette: Candy pink + sky blue + sunshine yellow + bean colors
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+9. OSR Star Finder
+Save as: /public/images/thumbnails/osr-star-finder.jpg
+================================================================================
+
+Professional portfolio thumbnail for "OSR Star Finder": AR app pointing at night sky to find registered stars. 
+
+Scene elements: Person holding phone up at starry night sky, AR overlay showing constellation lines, Highlighted star with name tag floating, Beautiful night sky with Milky Way, Romantic stargazing atmosphere
+
+Style: Romantic astronomy, night photography aesthetic
+Mood: Wonder, personal connection, cosmic beauty
+Color palette: Deep night blue + star white + AR cyan highlights
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+10. AvaSci
+Save as: /public/images/thumbnails/avasci.jpg
+================================================================================
+
+Professional portfolio thumbnail for "AvaSci": AI-powered realistic digital avatar creation platform. 
+
+Scene elements: Photorealistic digital human face, Face mesh wireframe transforming into skin, Motion capture dots on real face, Split screen showing real person and avatar, Futuristic avatar creation interface
+
+Style: High-tech portrait, digital human, uncanny valley breakthrough
+Mood: Cutting-edge, lifelike, futuristic identity
+Color palette: Skin tones + technical cyan wireframe + interface purple
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+11. Product Simulation
+Save as: /public/images/thumbnails/product-simulation.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Product Simulation": 3D product configurator for customization and AR preview. 
+
+Scene elements: Luxury product (car/furniture) in configurator interface, Color/material options floating around product, AR preview showing product in real room, Sleek e-commerce interface design, Photorealistic product rendering
+
+Style: Premium e-commerce, luxury product visualization
+Mood: Premium, customizable, confidence in purchase
+Color palette: Luxury black/white + accent colors for options
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+12. VR RCC
+Save as: /public/images/thumbnails/vr-rcc.jpg
+================================================================================
+
+Professional portfolio thumbnail for "VR RCC": VR racing with realistic car physics and cockpit interaction. 
+
+Scene elements: First-person cockpit view in VR, Hands gripping steering wheel, Racing track visible through windshield, Dashboard gauges and racing HUD, Motion blur suggesting speed
+
+Style: Racing simulation, cockpit perspective, speed
+Mood: Exhilarating, immersive, racing adrenaline
+Color palette: Racing red + track grey + dashboard glow
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+13. Hospital VR Simulation
+Save as: /public/images/thumbnails/hospital-vr-simulation.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Hospital VR Simulation": VR medical training in realistic hospital environment. 
+
+Scene elements: Healthcare worker in VR headset, Virtual patient on hospital bed, Medical equipment and monitors, Procedure guides floating in VR, Clean hospital environment
+
+Style: Medical professional, clinical, educational
+Mood: Professional, life-saving, educational confidence
+Color palette: Hospital white/green + medical blue + VR interface
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+14. AR Measuring Tape
+Save as: /public/images/thumbnails/ar-measuring-tape.jpg
+================================================================================
+
+Professional portfolio thumbnail for "AR Measuring Tape": AR app measuring real-world distances and spaces. 
+
+Scene elements: Phone showing AR measuring overlay, Measurement lines between points in room, Dimension numbers floating in AR, Room or furniture being measured, Clean utility app interface
+
+Style: Utility app, practical tool, clean design
+Mood: Practical, precise, helpful everyday tool
+Color palette: Clean white + measurement yellow + AR blue
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+15. AR Museum Game
+Save as: /public/images/thumbnails/ar-museum-game.jpg
+================================================================================
+
+Professional portfolio thumbnail for "AR Museum Game": AR gamifying museum visits with interactive exhibits. 
+
+Scene elements: Child pointing phone at museum exhibit, Historical figure appearing in AR next to artifact, Collection badges and achievements floating, Ancient artifact with AR information overlay, Museum gallery background
+
+Style: Educational entertainment, museum aesthetic, magical discovery
+Mood: Wonder, discovery, learning through play
+Color palette: Museum gold + historical sepia + AR magic purple
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+16. Kinect Runner
+Save as: /public/images/thumbnails/kinect-runner.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Kinect Runner": Full-body motion gaming controlled by physical movement. 
+
+Scene elements: Person running in place in living room, Kinect sensor capturing silhouette, Game character mirroring real movement on screen, Endless runner obstacles visible, Motion tracking skeleton overlay
+
+Style: Active gaming, fitness, motion capture visualization
+Mood: Active, fun, exercising through gaming
+Color palette: Living room warm + game neon + motion tracking green
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+17. Soul of King
+Save as: /public/images/thumbnails/soul-of-king.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Soul of King": 5v5 MOBA with mythological heroes in battle arena. 
+
+Scene elements: Epic battle scene with multiple heroes, Hero abilities with magical effects, MOBA lane and tower structures, Diverse character roster showcase, Dynamic team fight action
+
+Style: Epic fantasy MOBA, magical combat, heroic
+Mood: Epic, competitive, heroic team battles
+Color palette: Royal purple + ability gold + team blue/red
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+18. Handpan Hero
+Save as: /public/images/thumbnails/handpan-hero.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Handpan Hero": Rhythm game teaching handpan instrument through gameplay. 
+
+Scene elements: Beautiful handpan instrument close-up, Rhythm notes descending toward strike zones, Hands striking the handpan surface, Musical notes and sound waves visualized, Zen meditation aesthetic
+
+Style: Musical, zen, rhythm game interface
+Mood: Musical, meditative, learning through play
+Color palette: Handpan bronze/gold + rhythm neon + zen earth tones
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+19. Star Fox Rework
+Save as: /public/images/thumbnails/star-fox-rework.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Star Fox Rework": Classic space combat shooter with modern graphics. 
+
+Scene elements: Arwing spacecraft flying through asteroid field, Laser fire and explosions, Planet surface or space station below, Enemy ships in formation, Cockpit HUD elements
+
+Style: Space combat, retro-modern, Nintendo-inspired
+Mood: Nostalgic, action-packed, space adventure
+Color palette: Space black + laser green/red + Arwing grey/blue
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+20. Electric Mods
+Save as: /public/images/thumbnails/electric-mods.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Electric Mods": Electric vehicle racing with deep customization. 
+
+Scene elements: Sleek electric supercar on race track, Customization menu with parts options, Electric charging/energy visualization, Futuristic racing environment, Vehicle performance stats display
+
+Style: Electric future racing, clean tech aesthetic
+Mood: Fast, futuristic, eco-performance
+Color palette: Electric blue + racing neon + clean white
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+21. BeamNG Destruction System
+Save as: /public/images/thumbnails/beam-ng-destruction-system.jpg
+================================================================================
+
+Professional portfolio thumbnail for "BeamNG Destruction System": Soft-body physics vehicle deformation and crashes. 
+
+Scene elements: Car mid-crash with realistic crumpling, Deformation simulation visualization, Before/after damage comparison, Slow-motion impact moment, Technical physics node visualization
+
+Style: Physics simulation, technical, destructive satisfaction
+Mood: Scientific fascination, destruction physics
+Color palette: Metal grey + crash fire orange + technical wireframe
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+22. Multiplayer Shooting
+Save as: /public/images/thumbnails/multiplayer-shooting.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Multiplayer Shooting": Competitive FPS multiplayer with precise gunplay. 
+
+Scene elements: First-person gun aiming down sights, Multiplayer combat scene, Weapon loadout display, Tactical urban environment, Kill feed and HUD elements
+
+Style: Competitive FPS, tactical military, esports
+Mood: Competitive, tactical, skill-based combat
+Color palette: Military tactical grey + HUD orange + muzzle flash
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+23. Project Racer
+Save as: /public/images/thumbnails/project-racer.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Project Racer": Arcade racing with track editor and multiplayer. 
+
+Scene elements: Racing cars drifting on colorful track, Track editor interface showing custom creation, Multiplayer grid start, Reactive track environment, Leaderboard and time display
+
+Style: Arcade racing, vibrant, competitive
+Mood: Fast, fun, creative racing community
+Color palette: Racing vibrant colors + track neon + speed blur
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+24. Medieval Lands
+Save as: /public/images/thumbnails/medieval-lands.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Medieval Lands": Dark fantasy action RPG with combat and exploration. 
+
+Scene elements: Warrior with sword in medieval landscape, Combat against fantasy creature, Castle or medieval village background, RPG interface with health/stamina bars, Epic dark fantasy atmosphere
+
+Style: Dark fantasy RPG, medieval, cinematic
+Mood: Epic adventure, danger, heroic journey
+Color palette: Medieval earth tones + blood red + steel grey
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+25. Dandera Quest
+Save as: /public/images/thumbnails/dandera-quest.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Dandera Quest": Ancient Egyptian temple puzzle adventure. 
+
+Scene elements: Dendera temple interior with hieroglyphics, Archaeologist solving light-based puzzle, Ancient mechanisms and artifacts, Zodiac ceiling detail, Torchlit mysterious atmosphere
+
+Style: Archaeological adventure, Egyptian mysticism
+Mood: Mysterious, discovery, ancient secrets
+Color palette: Egyptian gold + sandstone + torchlight amber
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+26. Hyper Casual Bus Sort
+Save as: /public/images/thumbnails/hyper-casual-bus-sort.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Hyper Casual Bus Sort": Puzzle game sorting colored passengers onto buses. 
+
+Scene elements: Colorful buses with matching passengers, Tap-to-move gameplay visualization, Clean cartoon puzzle aesthetic, Level completion celebration, Simple satisfying mechanics
+
+Style: Hyper-casual mobile, cartoon, satisfying
+Mood: Simple, satisfying, casual puzzle fun
+Color palette: Bright primary colors + clean white background
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+27. Hyper Casual Runner
+Save as: /public/images/thumbnails/hyper-casual-runner.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Hyper Casual Runner": Endless runner with swipe controls and collectibles. 
+
+Scene elements: Character running through colorful obstacles, Swipe gesture indicators, Coins and collectibles floating, Procedural endless path ahead, Mobile game UI elements
+
+Style: Endless runner, mobile casual, colorful
+Mood: Addictive, quick sessions, beat your score
+Color palette: Bright game colors + coin gold + obstacle red
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+28. Genetiq
+Save as: /public/images/thumbnails/genetiq.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Genetiq": Evolution strategy game with genetic trait manipulation. 
+
+Scene elements: Creature evolution tree visualization, DNA helix and genetic traits, Creatures adapting to environment, Trait selection interface, Evolutionary progression
+
+Style: Scientific strategy, evolution visualization
+Mood: Scientific curiosity, strategic evolution
+Color palette: DNA green/blue + evolution earth tones + UI purple
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+29. Typing Online
+Save as: /public/images/thumbnails/typing-online.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Typing Online": Multiplayer typing races with real-time competition. 
+
+Scene elements: Racing cars representing typists, Typing passage with highlighted progress, WPM speedometer display, Multiplayer race visualization, Keyboard and fast fingers
+
+Style: Educational competitive, typing interface
+Mood: Competitive, skill improvement, racing excitement
+Color palette: Racing colors + keyboard grey + progress green
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+30. Realistic 3rd Person Warrior Game
+Save as: /public/images/thumbnails/realistic-3rd-person-warrior-game.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Realistic 3rd Person Warrior Game": Visceral melee combat with realistic warrior animations. 
+
+Scene elements: Warrior mid-swing with heavy sword, Brutal combat against armored enemy, Sparks and blood effects, Dark medieval battlefield, Unreal Engine 5 visual quality
+
+Style: Dark Souls-inspired, brutal combat, cinematic
+Mood: Brutal, weighty, skill-based combat
+Color palette: Dark medieval + blood red + steel weapon shine
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+31. Office Simulator
+Save as: /public/images/thumbnails/office-simulator-hyper-casual.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Office Simulator": Comedic office chaos management simulation. 
+
+Scene elements: Chaotic office scene with flying papers, Stressed character avoiding boss, Office tasks and time pressure, Humorous workplace scenarios, Cartoon office aesthetic
+
+Style: Comedy simulation, cartoon office, chaotic
+Mood: Hilarious, relatable, office humor
+Color palette: Office beige + stress red + humor bright accents
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+32. 3D World Hologram Shader
+Save as: /public/images/thumbnails/3d-world-hologram-shader.jpg
+================================================================================
+
+Professional portfolio thumbnail for "3D World Hologram Shader": Holographic shader effects for sci-fi visualization. 
+
+Scene elements: 3D globe or structure with hologram effect, Scan lines and chromatic aberration, Glitch effects and digital noise, Cyan/blue holographic glow, Sci-fi interface aesthetic
+
+Style: Sci-fi hologram, technical visualization, futuristic
+Mood: Futuristic, technical, sci-fi aesthetic
+Color palette: Hologram cyan + scan line blue + glitch artifacts
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+33. Realistic 3D Cinematic
+Save as: /public/images/thumbnails/realistic-3d-cinematic-unreal.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Realistic 3D Cinematic": Photorealistic cinematics with Unreal Engine 5. 
+
+Scene elements: Photorealistic environment or character, Cinematic camera angle and lighting, Lumen global illumination showcase, Film-quality visual effects, Virtual production aesthetic
+
+Style: Photorealistic cinematic, film quality, UE5 showcase
+Mood: Cinematic wonder, photorealistic achievement
+Color palette: Cinematic color grading + natural lighting
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+34. Mobile Game Ready 3D Assets
+Save as: /public/images/thumbnails/mobile-game-ready-3d-assets.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Mobile Game Ready 3D Assets": Optimized 3D assets for mobile game development. 
+
+Scene elements: Collection of stylized 3D game assets, Characters, props, and environments together, Low-poly aesthetic with clean textures, Asset showcase on mobile device, Game-ready presentation
+
+Style: Game asset pack, stylized 3D, mobile-optimized
+Mood: Professional, ready-to-use, game development
+Color palette: Stylized game colors + clean presentation
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+35. Transformer Robot 3D Model
+Save as: /public/images/thumbnails/transformer-robot-3d-model-animation.jpg
+================================================================================
+
+Professional portfolio thumbnail for "Transformer Robot 3D Model": Transforming robot model with detailed animation. 
+
+Scene elements: Robot mid-transformation sequence, Mechanical parts folding and moving, Both robot and vehicle forms visible, Technical mechanical detail, Dynamic action pose
+
+Style: Mechanical character, transformation, technical 3D
+Mood: Impressive engineering, dynamic transformation
+Color palette: Metal silver/grey + mechanical accent colors
+
+Technical requirements: 16:9 aspect ratio, high resolution, suitable for web portfolio, clear visual communication of the concept, no text or watermarks, professional game/tech industry quality.
+
+────────────────────────────────────────────────────────────────────────────────
+

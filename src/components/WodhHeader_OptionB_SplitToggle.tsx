@@ -1,52 +1,52 @@
 "use client";
 
-import React, { useEffect, useMemo, useState, useRef } from "react";
+import React, { useEffect, useMemo, useState, useRef, createContext, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Mode = "XR" | "Games";
 
-const XR_LINKS = [
-  { label: "Industries", href: "/industries" },
-];
+// Create context to share mode across components
+export const ModeContext = createContext<{
+  mode: Mode;
+  setMode: (mode: Mode) => void;
+}>({
+  mode: "XR",
+  setMode: () => {},
+});
 
-const GAME_LINKS = [
-  { label: "Games", href: "#games" },
-  { label: "Pipeline", href: "#process" },
-  { label: "Engines", href: "#tech" },
-  { label: "Projects", href: "#projects" },
-];
+export const useMode = () => useContext(ModeContext);
 
 const SERVICE_HUB_LINKS = [
-  { label: "Service Hub", href: "/service-hub" },
-  { label: "XR Services 357", href: "/xr-services-357" },
+  { label: "Service Hub", href: "/servicehubfinal" },
+  { label: "XR Services", href: "/xr-services-357" },
   { label: "Game Services", href: "/gameservicesv3" },
-  { label: "3D Art & Design", href: "/3dart-designservicesv1" },
+  { label: "3D Art & Design", href: "/3dart-designservicesv3" },
 ];
 
-const SINGLES_LINKS = [
-  { label: "Game C-Study", href: "/casestudytem1" },
-  { label: "Xrcasestudy", href: "/xrcasestudyv2" },
+const CASE_STUDY_LINKS = [
+  { label: "TraceAR City Portal", href: "/projects/trace3d-city-portal" },
+  { label: "Soul of King (MOBA)", href: "/projects/soul-of-king" },
+  { label: "Project Racer", href: "/projects/project-racer" },
+  { label: "HAKI Scaffolding VR", href: "/projects/haki-scaffolding-vr" },
+  { label: "AR Museum Game", href: "/projects/ar-museum-game" },
 ];
 
-const THREEDART_CSS_LINKS = [
-  { label: "3D Case Study Single V1", href: "/3dcasestudysinglev1" },
-  { label: "3D Case Study Single VD", href: "/3dcasestudysinglevd" },
-  { label: "3D Case Study Single VE", href: "/3dcasestudysingleve" },
-  { label: "3D Case Study Single VF", href: "/3dcasestudysinglevf" },
-  { label: "Header Ideas", href: "/headerideas" },
-  { label: "Footer Variants", href: "/footervariants" },
+const WORK_LINKS = [
+  { label: "XR Projects", href: "/portfolio?category=XR" },
+  { label: "Game Projects", href: "/portfolio?category=Games" },
+  { label: "3D Projects", href: "/portfolio?category=3D" },
+  { label: "All Projects", href: "/portfolio" },
 ];
 
 const COMMON_LINKS = [
-  { label: "Portfolio", href: "/portfoliofinale" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about-us" },
   { label: "Contact", href: "/contact" },
   { label: "Careers", href: "/careers" },
 ];
 
-const BG = "#0C0722";
-const PANEL = "#0F0A26";
 const BORDER = "#2A1E55";
+const PANEL = "#0F0A26";
 const NEON = "#9EF315";
 const VIOLET = "#5B2DDC";
 
@@ -55,15 +55,22 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [serviceHubOpen, setServiceHubOpen] = useState(false);
   const serviceHubRef = useRef<HTMLDivElement>(null);
-  const [singlesOpen, setSinglesOpen] = useState(false);
-  const singlesRef = useRef<HTMLDivElement>(null);
-  const [threedartcssOpen, setThreedartcssOpen] = useState(false);
-  const threedartcssRef = useRef<HTMLDivElement>(null);
+  const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
+  const caseStudiesRef = useRef<HTMLDivElement>(null);
+  const [workOpen, setWorkOpen] = useState(false);
+  const workRef = useRef<HTMLDivElement>(null);
 
-  const links = useMemo(
-    () => [...(mode === "XR" ? XR_LINKS : GAME_LINKS), ...COMMON_LINKS],
-    [mode]
-  );
+  // Store mode in localStorage and dispatch event for other components
+  useEffect(() => {
+    const savedMode = localStorage.getItem("wodh-mode") as Mode;
+    if (savedMode) setMode(savedMode);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("wodh-mode", mode);
+    // Dispatch custom event so other components can react
+    window.dispatchEvent(new CustomEvent("wodh-mode-change", { detail: mode }));
+  }, [mode]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -78,24 +85,29 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
       if (serviceHubRef.current && !serviceHubRef.current.contains(event.target as Node)) {
         setServiceHubOpen(false);
       }
-      if (singlesRef.current && !singlesRef.current.contains(event.target as Node)) {
-        setSinglesOpen(false);
+      if (caseStudiesRef.current && !caseStudiesRef.current.contains(event.target as Node)) {
+        setCaseStudiesOpen(false);
       }
-      if (threedartcssRef.current && !threedartcssRef.current.contains(event.target as Node)) {
-        setThreedartcssOpen(false);
+      if (workRef.current && !workRef.current.contains(event.target as Node)) {
+        setWorkOpen(false);
       }
     };
 
-    if (serviceHubOpen || singlesOpen || threedartcssOpen) {
+    if (serviceHubOpen || caseStudiesOpen || workOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [serviceHubOpen, singlesOpen, threedartcssOpen]);
+  }, [serviceHubOpen, caseStudiesOpen, workOpen]);
 
   const activeColor = mode === "XR" ? NEON : VIOLET;
+
+  // Dynamic links based on mode
+  const modeSpecificLink = mode === "XR" 
+    ? { label: "XR Work", href: "/portfolio?category=XR" }
+    : { label: "Game Work", href: "/portfolio?category=Games" };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[60]">
@@ -119,7 +131,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
           WODH
         </a>
 
-        {/* Toggle */}
+        {/* Toggle - Switches site focus between XR and Games */}
         <div className="hidden md:flex items-center gap-3">
           <div
             className="relative flex items-center rounded-full p-1 border"
@@ -135,6 +147,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                   style={{
                     color: active ? "#000" : "rgba(255,255,255,0.8)",
                   }}
+                  title={m === "XR" ? "Focus on XR & Metaverse projects" : "Focus on Game Development projects"}
                 >
                   {m === "XR" ? "XR" : "GAMES"}
                   {active && (
@@ -160,35 +173,44 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
 
         {/* Links */}
         <nav className="hidden md:flex items-center gap-1">
-          <AnimatePresence mode="popLayout">
-            {links.map((l) => (
-              <motion.a
-                key={mode + l.label}
-                href={l.href}
-                initial={{ opacity: 0, y: -6 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ duration: 0.18 }}
-                className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
-              >
-                {l.label}
-                <span
-                  className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
-                  style={{
-                    background: `linear-gradient(90deg, ${activeColor}, transparent)`,
-                  }}
-                />
-              </motion.a>
-            ))}
-          </AnimatePresence>
+          {/* Mode-specific link */}
+          <a
+            href={modeSpecificLink.href}
+            className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+          >
+            {modeSpecificLink.label}
+            <span
+              className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+              style={{
+                background: `linear-gradient(90deg, ${activeColor}, transparent)`,
+              }}
+            />
+          </a>
+
+          {/* Common Links */}
+          {COMMON_LINKS.map((l) => (
+            <a
+              key={l.label}
+              href={l.href}
+              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+            >
+              {l.label}
+              <span
+                className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                style={{
+                  background: `linear-gradient(90deg, ${activeColor}, transparent)`,
+                }}
+              />
+            </a>
+          ))}
 
           {/* Service Hub Dropdown */}
           <div ref={serviceHubRef} className="relative">
             <button
               onClick={() => setServiceHubOpen(!serviceHubOpen)}
-              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition flex items-center"
             >
-              Service Hub
+              Services
               <span
                 className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
                 style={{
@@ -268,13 +290,13 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
             </AnimatePresence>
           </div>
 
-          {/* Singles Dropdown */}
-          <div ref={singlesRef} className="relative">
+          {/* Case Studies Dropdown */}
+          <div ref={caseStudiesRef} className="relative">
             <button
-              onClick={() => setSinglesOpen(!singlesOpen)}
-              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+              onClick={() => setCaseStudiesOpen(!caseStudiesOpen)}
+              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition flex items-center"
             >
-              Singles
+              Case Studies
               <span
                 className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
                 style={{
@@ -283,7 +305,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
               />
               <svg
                 className={`ml-1 inline-block h-3 w-3 transition-transform duration-200 ${
-                  singlesOpen ? "rotate-180" : ""
+                  caseStudiesOpen ? "rotate-180" : ""
                 }`}
                 fill="none"
                 stroke="currentColor"
@@ -299,7 +321,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
             </button>
 
             <AnimatePresence>
-              {singlesOpen && (
+              {caseStudiesOpen && (
                 <motion.div
                   initial={{ opacity: 0, y: -10, scale: 0.95 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -327,11 +349,11 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                   />
 
                   <div className="relative">
-                    {SINGLES_LINKS.map((link, index) => (
+                    {CASE_STUDY_LINKS.map((link, index) => (
                       <a
                         key={link.href}
                         href={link.href}
-                        onClick={() => setSinglesOpen(false)}
+                        onClick={() => setCaseStudiesOpen(false)}
                         className="block px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 transition-colors"
                         style={{
                           borderTop: index > 0 ? `1px solid ${BORDER}40` : "none",
@@ -354,13 +376,13 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
             </AnimatePresence>
           </div>
 
-          {/* 3D Art CSS Dropdown */}
-          <div ref={threedartcssRef} className="relative">
+          {/* Work Dropdown */}
+          <div ref={workRef} className="relative">
             <button
-              onClick={() => setThreedartcssOpen(!threedartcssOpen)}
-              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
+              onClick={() => setWorkOpen(!workOpen)}
+              className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition flex items-center"
             >
-              3dartCSS
+              Work
               <span
                 className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
                 style={{
@@ -369,7 +391,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
               />
               <svg
                 className={`ml-1 inline-block h-3 w-3 transition-transform duration-200 ${
-                  threedartcssOpen ? "rotate-180" : ""
+                  workOpen ? "rotate-180" : ""
                 }`}
                 fill="none"
                 stroke="currentColor"
@@ -385,7 +407,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
             </button>
 
             <AnimatePresence>
-              {threedartcssOpen && (
+              {workOpen && (
                 <motion.div
                   initial={{ opacity: 0, y: -10, scale: 0.95 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -413,11 +435,11 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                   />
 
                   <div className="relative">
-                    {THREEDART_CSS_LINKS.map((link, index) => (
+                    {WORK_LINKS.map((link, index) => (
                       <a
                         key={link.href}
                         href={link.href}
-                        onClick={() => setThreedartcssOpen(false)}
+                        onClick={() => setWorkOpen(false)}
                         className="block px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 transition-colors"
                         style={{
                           borderTop: index > 0 ? `1px solid ${BORDER}40` : "none",
@@ -444,7 +466,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
         {/* CTA */}
         <a
           href="/contact"
-          className="relative inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 text-sm font-semibold text-black transition"
+          className="relative inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 text-sm font-semibold text-black transition hover:opacity-90"
           style={{
             background: `linear-gradient(90deg, ${activeColor}, ${activeColor}CC)`,
             boxShadow: `0 12px 30px ${activeColor}33`,
@@ -458,4 +480,3 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
 };
 
 export default WodhHeader_OptionB_SplitToggle;
-

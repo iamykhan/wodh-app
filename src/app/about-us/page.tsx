@@ -929,7 +929,7 @@ export default function AboutUs() {
                   {DATA.deliver.pillars.map((p, idx) => (
                     <HoverCard key={p.title} className="p-7" rounded="rounded-3xl">
                       <div className="hidden lg:block">
-                        <div className="absolute left-[7px] top-8 h-3 w-3 rounded-full border border-white/15 bg-[#0C0722]">
+                        <div className="absolute -left-[18px] top-8 h-3 w-3 rounded-full border border-white/15 bg-[#0C0722]">
                           {!reducedMotion ? (
                             <div
                               className="absolute inset-0 rounded-full bg-[#9EF315] opacity-70 blur-[1px]"

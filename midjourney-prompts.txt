@@ -1,0 +1,321 @@
+🎨 MIDJOURNEY THUMBNAIL PROMPTS
+================================================================================
+
+Copy each prompt into Midjourney Discord to generate thumbnails.
+Save generated images to: /public/images/thumbnails/[slug].jpg
+
+================================================================================
+1. TraceAR City Portal
+Save as: /public/images/thumbnails/trace3d-city-portal.jpg
+================================================================================
+
+/imagine City-scale AR navigation overlaying digital information on streets, Modern city street with glass buildings, Holographic AR overlay showing navigation arrows floating in air, Person holding smartphone with AR interface visible, Digital store signs and waypoints hovering above real buildings, Blue/cyan AR elements contrasting with warm city lighting, Futuristic urban, cinematic lighting, technological overlay aesthetic, Innovative, helpful, seamlessly blending digital and physical, Warm city amber + cool cyan AR elements, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+2. HAKI Scaffolding VR
+Save as: /public/images/thumbnails/haki-scaffolding-vr.jpg
+================================================================================
+
+/imagine VR industrial safety training for scaffolding assembly, Person wearing VR headset in industrial setting, Virtual scaffolding structure being assembled, Construction safety elements (hard hat, safety harness), Step-by-step assembly guides floating in VR space, Industrial warehouse or construction site background, Industrial training, professional, safety-focused, Educational, professional, safety-conscious, Industrial grey + safety orange/yellow + VR blue accents, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+3. Point Cloud Mesh Generation
+Save as: /public/images/thumbnails/point-cloud-mesh-generation.jpg
+================================================================================
+
+/imagine LiDAR scanning converting points into 3D meshes in real-time, Dense point cloud data visualized as colored dots, Points transforming into solid 3D mesh surface, LiDAR scanning beams emanating from device, Room or environment being scanned and reconstructed, Technical data visualization aesthetic, Scientific visualization, data-driven, technical, Cutting-edge technology, precision, transformation, Rainbow point cloud colors + wireframe blue + solid mesh grey, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+4. TopDown VR
+Save as: /public/images/thumbnails/topdown-vr.jpg
+================================================================================
+
+/imagine God-game VR where player looks down at miniature world, Floating diorama-style miniature world on table, Giant hands reaching down to interact with tiny buildings, VR headset wearer viewed from above, Tiny characters and structures in strategic game layout, Ethereal lighting from above, Fantasy strategy, tabletop gaming, immersive VR, Powerful, strategic, whimsical god-perspective, Warm miniature world + purple VR environment, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+5. WebGL Rocket Simulation
+Save as: /public/images/thumbnails/webgl-rocket-simulation.jpg
+================================================================================
+
+/imagine Educational browser-based rocket physics and orbital mechanics, Rocket launching with detailed exhaust plume, Orbital trajectory lines around Earth, Physics equations and trajectory data overlaid, Browser window frame showing web application, Educational diagram aesthetic with labels, Educational scientific illustration, NASA-inspired, Educational, inspiring, scientifically accurate, Space black + rocket white/orange + trajectory green/blue, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+6. Zombie Game VR
+Save as: /public/images/thumbnails/zombie-game-vr.jpg
+================================================================================
+
+/imagine Terrifying VR zombie shooter with realistic weapons, First-person view holding shotgun in VR, Zombies emerging from darkness, Abandoned urban environment with debris, Muzzle flash and shell casings, Atmospheric fog and horror lighting, Horror survival, intense action, atmospheric, Terrifying, intense, survival adrenaline, Dark shadows + blood red + muzzle flash orange, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+7. VR Physical Keyboard
+Save as: /public/images/thumbnails/vr-physical-keyboard.jpg
+================================================================================
+
+/imagine VR productivity with passthrough showing real keyboard, VR headset wearer at desk, Physical keyboard visible through passthrough, Virtual monitors floating in VR space, Hands typing with overlay highlighting keys, Modern workspace environment, Productivity tech, clean modern aesthetic, Productive, seamless, professional workflow, Clean white workspace + subtle VR blue overlays, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+8. VR Fall Guys
+Save as: /public/images/thumbnails/vr-fall-guys.jpg
+================================================================================
+
+/imagine Chaotic VR party game with physics-based bean characters, Colorful bean characters racing on obstacle course, Physics-based chaos with characters tumbling, Vibrant candy-colored environment, Spinning obstacles and platforms, First-person VR perspective of the chaos, Playful party game, cartoon physics, vibrant, Fun, chaotic, hilarious multiplayer energy, Candy pink + sky blue + sunshine yellow + bean colors, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+9. OSR Star Finder
+Save as: /public/images/thumbnails/osr-star-finder.jpg
+================================================================================
+
+/imagine AR app pointing at night sky to find registered stars, Person holding phone up at starry night sky, AR overlay showing constellation lines, Highlighted star with name tag floating, Beautiful night sky with Milky Way, Romantic stargazing atmosphere, Romantic astronomy, night photography aesthetic, Wonder, personal connection, cosmic beauty, Deep night blue + star white + AR cyan highlights, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+10. AvaSci
+Save as: /public/images/thumbnails/avasci.jpg
+================================================================================
+
+/imagine AI-powered realistic digital avatar creation platform, Photorealistic digital human face, Face mesh wireframe transforming into skin, Motion capture dots on real face, Split screen showing real person and avatar, Futuristic avatar creation interface, High-tech portrait, digital human, uncanny valley breakthrough, Cutting-edge, lifelike, futuristic identity, Skin tones + technical cyan wireframe + interface purple, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+11. Product Simulation
+Save as: /public/images/thumbnails/product-simulation.jpg
+================================================================================
+
+/imagine 3D product configurator for customization and AR preview, Luxury product (car/furniture) in configurator interface, Color/material options floating around product, AR preview showing product in real room, Sleek e-commerce interface design, Photorealistic product rendering, Premium e-commerce, luxury product visualization, Premium, customizable, confidence in purchase, Luxury black/white + accent colors for options, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+12. VR RCC
+Save as: /public/images/thumbnails/vr-rcc.jpg
+================================================================================
+
+/imagine VR racing with realistic car physics and cockpit interaction, First-person cockpit view in VR, Hands gripping steering wheel, Racing track visible through windshield, Dashboard gauges and racing HUD, Motion blur suggesting speed, Racing simulation, cockpit perspective, speed, Exhilarating, immersive, racing adrenaline, Racing red + track grey + dashboard glow, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+13. Hospital VR Simulation
+Save as: /public/images/thumbnails/hospital-vr-simulation.jpg
+================================================================================
+
+/imagine VR medical training in realistic hospital environment, Healthcare worker in VR headset, Virtual patient on hospital bed, Medical equipment and monitors, Procedure guides floating in VR, Clean hospital environment, Medical professional, clinical, educational, Professional, life-saving, educational confidence, Hospital white/green + medical blue + VR interface, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+14. AR Measuring Tape
+Save as: /public/images/thumbnails/ar-measuring-tape.jpg
+================================================================================
+
+/imagine AR app measuring real-world distances and spaces, Phone showing AR measuring overlay, Measurement lines between points in room, Dimension numbers floating in AR, Room or furniture being measured, Clean utility app interface, Utility app, practical tool, clean design, Practical, precise, helpful everyday tool, Clean white + measurement yellow + AR blue, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+15. AR Museum Game
+Save as: /public/images/thumbnails/ar-museum-game.jpg
+================================================================================
+
+/imagine AR gamifying museum visits with interactive exhibits, Child pointing phone at museum exhibit, Historical figure appearing in AR next to artifact, Collection badges and achievements floating, Ancient artifact with AR information overlay, Museum gallery background, Educational entertainment, museum aesthetic, magical discovery, Wonder, discovery, learning through play, Museum gold + historical sepia + AR magic purple, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+16. Kinect Runner
+Save as: /public/images/thumbnails/kinect-runner.jpg
+================================================================================
+
+/imagine Full-body motion gaming controlled by physical movement, Person running in place in living room, Kinect sensor capturing silhouette, Game character mirroring real movement on screen, Endless runner obstacles visible, Motion tracking skeleton overlay, Active gaming, fitness, motion capture visualization, Active, fun, exercising through gaming, Living room warm + game neon + motion tracking green, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+17. Soul of King
+Save as: /public/images/thumbnails/soul-of-king.jpg
+================================================================================
+
+/imagine 5v5 MOBA with mythological heroes in battle arena, Epic battle scene with multiple heroes, Hero abilities with magical effects, MOBA lane and tower structures, Diverse character roster showcase, Dynamic team fight action, Epic fantasy MOBA, magical combat, heroic, Epic, competitive, heroic team battles, Royal purple + ability gold + team blue/red, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+18. Handpan Hero
+Save as: /public/images/thumbnails/handpan-hero.jpg
+================================================================================
+
+/imagine Rhythm game teaching handpan instrument through gameplay, Beautiful handpan instrument close-up, Rhythm notes descending toward strike zones, Hands striking the handpan surface, Musical notes and sound waves visualized, Zen meditation aesthetic, Musical, zen, rhythm game interface, Musical, meditative, learning through play, Handpan bronze/gold + rhythm neon + zen earth tones, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+19. Star Fox Rework
+Save as: /public/images/thumbnails/star-fox-rework.jpg
+================================================================================
+
+/imagine Classic space combat shooter with modern graphics, Arwing spacecraft flying through asteroid field, Laser fire and explosions, Planet surface or space station below, Enemy ships in formation, Cockpit HUD elements, Space combat, retro-modern, Nintendo-inspired, Nostalgic, action-packed, space adventure, Space black + laser green/red + Arwing grey/blue, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+20. Electric Mods
+Save as: /public/images/thumbnails/electric-mods.jpg
+================================================================================
+
+/imagine Electric vehicle racing with deep customization, Sleek electric supercar on race track, Customization menu with parts options, Electric charging/energy visualization, Futuristic racing environment, Vehicle performance stats display, Electric future racing, clean tech aesthetic, Fast, futuristic, eco-performance, Electric blue + racing neon + clean white, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+21. BeamNG Destruction System
+Save as: /public/images/thumbnails/beam-ng-destruction-system.jpg
+================================================================================
+
+/imagine Soft-body physics vehicle deformation and crashes, Car mid-crash with realistic crumpling, Deformation simulation visualization, Before/after damage comparison, Slow-motion impact moment, Technical physics node visualization, Physics simulation, technical, destructive satisfaction, Scientific fascination, destruction physics, Metal grey + crash fire orange + technical wireframe, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+22. Multiplayer Shooting
+Save as: /public/images/thumbnails/multiplayer-shooting.jpg
+================================================================================
+
+/imagine Competitive FPS multiplayer with precise gunplay, First-person gun aiming down sights, Multiplayer combat scene, Weapon loadout display, Tactical urban environment, Kill feed and HUD elements, Competitive FPS, tactical military, esports, Competitive, tactical, skill-based combat, Military tactical grey + HUD orange + muzzle flash, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+23. Project Racer
+Save as: /public/images/thumbnails/project-racer.jpg
+================================================================================
+
+/imagine Arcade racing with track editor and multiplayer, Racing cars drifting on colorful track, Track editor interface showing custom creation, Multiplayer grid start, Reactive track environment, Leaderboard and time display, Arcade racing, vibrant, competitive, Fast, fun, creative racing community, Racing vibrant colors + track neon + speed blur, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+24. Medieval Lands
+Save as: /public/images/thumbnails/medieval-lands.jpg
+================================================================================
+
+/imagine Dark fantasy action RPG with combat and exploration, Warrior with sword in medieval landscape, Combat against fantasy creature, Castle or medieval village background, RPG interface with health/stamina bars, Epic dark fantasy atmosphere, Dark fantasy RPG, medieval, cinematic, Epic adventure, danger, heroic journey, Medieval earth tones + blood red + steel grey, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+25. Dandera Quest
+Save as: /public/images/thumbnails/dandera-quest.jpg
+================================================================================
+
+/imagine Ancient Egyptian temple puzzle adventure, Dendera temple interior with hieroglyphics, Archaeologist solving light-based puzzle, Ancient mechanisms and artifacts, Zodiac ceiling detail, Torchlit mysterious atmosphere, Archaeological adventure, Egyptian mysticism, Mysterious, discovery, ancient secrets, Egyptian gold + sandstone + torchlight amber, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+26. Hyper Casual Bus Sort
+Save as: /public/images/thumbnails/hyper-casual-bus-sort.jpg
+================================================================================
+
+/imagine Puzzle game sorting colored passengers onto buses, Colorful buses with matching passengers, Tap-to-move gameplay visualization, Clean cartoon puzzle aesthetic, Level completion celebration, Simple satisfying mechanics, Hyper-casual mobile, cartoon, satisfying, Simple, satisfying, casual puzzle fun, Bright primary colors + clean white background, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+27. Hyper Casual Runner
+Save as: /public/images/thumbnails/hyper-casual-runner.jpg
+================================================================================
+
+/imagine Endless runner with swipe controls and collectibles, Character running through colorful obstacles, Swipe gesture indicators, Coins and collectibles floating, Procedural endless path ahead, Mobile game UI elements, Endless runner, mobile casual, colorful, Addictive, quick sessions, beat your score, Bright game colors + coin gold + obstacle red, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+28. Genetiq
+Save as: /public/images/thumbnails/genetiq.jpg
+================================================================================
+
+/imagine Evolution strategy game with genetic trait manipulation, Creature evolution tree visualization, DNA helix and genetic traits, Creatures adapting to environment, Trait selection interface, Evolutionary progression, Scientific strategy, evolution visualization, Scientific curiosity, strategic evolution, DNA green/blue + evolution earth tones + UI purple, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+29. Typing Online
+Save as: /public/images/thumbnails/typing-online.jpg
+================================================================================
+
+/imagine Multiplayer typing races with real-time competition, Racing cars representing typists, Typing passage with highlighted progress, WPM speedometer display, Multiplayer race visualization, Keyboard and fast fingers, Educational competitive, typing interface, Competitive, skill improvement, racing excitement, Racing colors + keyboard grey + progress green, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+30. Realistic 3rd Person Warrior Game
+Save as: /public/images/thumbnails/realistic-3rd-person-warrior-game.jpg
+================================================================================
+
+/imagine Visceral melee combat with realistic warrior animations, Warrior mid-swing with heavy sword, Brutal combat against armored enemy, Sparks and blood effects, Dark medieval battlefield, Unreal Engine 5 visual quality, Dark Souls-inspired, brutal combat, cinematic, Brutal, weighty, skill-based combat, Dark medieval + blood red + steel weapon shine, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+31. Office Simulator
+Save as: /public/images/thumbnails/office-simulator-hyper-casual.jpg
+================================================================================
+
+/imagine Comedic office chaos management simulation, Chaotic office scene with flying papers, Stressed character avoiding boss, Office tasks and time pressure, Humorous workplace scenarios, Cartoon office aesthetic, Comedy simulation, cartoon office, chaotic, Hilarious, relatable, office humor, Office beige + stress red + humor bright accents, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+32. 3D World Hologram Shader
+Save as: /public/images/thumbnails/3d-world-hologram-shader.jpg
+================================================================================
+
+/imagine Holographic shader effects for sci-fi visualization, 3D globe or structure with hologram effect, Scan lines and chromatic aberration, Glitch effects and digital noise, Cyan/blue holographic glow, Sci-fi interface aesthetic, Sci-fi hologram, technical visualization, futuristic, Futuristic, technical, sci-fi aesthetic, Hologram cyan + scan line blue + glitch artifacts, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+33. Realistic 3D Cinematic
+Save as: /public/images/thumbnails/realistic-3d-cinematic-unreal.jpg
+================================================================================
+
+/imagine Photorealistic cinematics with Unreal Engine 5, Photorealistic environment or character, Cinematic camera angle and lighting, Lumen global illumination showcase, Film-quality visual effects, Virtual production aesthetic, Photorealistic cinematic, film quality, UE5 showcase, Cinematic wonder, photorealistic achievement, Cinematic color grading + natural lighting, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+34. Mobile Game Ready 3D Assets
+Save as: /public/images/thumbnails/mobile-game-ready-3d-assets.jpg
+================================================================================
+
+/imagine Optimized 3D assets for mobile game development, Collection of stylized 3D game assets, Characters, props, and environments together, Low-poly aesthetic with clean textures, Asset showcase on mobile device, Game-ready presentation, Game asset pack, stylized 3D, mobile-optimized, Professional, ready-to-use, game development, Stylized game colors + clean presentation, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+35. Transformer Robot 3D Model
+Save as: /public/images/thumbnails/transformer-robot-3d-model-animation.jpg
+================================================================================
+
+/imagine Transforming robot model with detailed animation, Robot mid-transformation sequence, Mechanical parts folding and moving, Both robot and vehicle forms visible, Technical mechanical detail, Dynamic action pose, Mechanical character, transformation, technical 3D, Impressive engineering, dynamic transformation, Metal silver/grey + mechanical accent colors, professional portfolio thumbnail, 16:9 aspect ratio, high quality --ar 16:9 --v 6
+
+────────────────────────────────────────────────────────────────────────────────
+

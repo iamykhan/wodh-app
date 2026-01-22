@@ -56,24 +56,28 @@ export default function WodhExpertiseTypographyPlus() {
       gradient: "from-[#9EF315] to-[#5B2DDC]",
       desc: "From concept to launch, we craft interactive experiences for mobile, PC, console & web using Unity, Unreal Engine & proprietary stacks.",
       link: "View Game Projects →",
+      href: "/portfolio?category=Games",
     },
     {
       title: "XR & Metaverse",
       gradient: "from-[#5B2DDC] to-[#9EF315]",
       desc: "Immersive AR, VR & MR experiences that redefine engagement — built for Apple Vision Pro, Meta Quest, Pico & WebXR.",
       link: "Explore XR Work →",
+      href: "/portfolio?category=XR",
     },
     {
       title: "3D Design",
       gradient: "from-[#9EF315] to-[#5B2DDC]",
       desc: "Stylized & realistic assets, environments, characters & cinematics — optimized for real-time engines & XR pipelines.",
-      link: "Watch 3D Reel →",
+      link: "View 3D Projects →",
+      href: "/portfolio?category=3D",
     },
     {
       title: "Creative Tech",
       gradient: "from-[#5B2DDC] to-[#9EF315]",
       desc: "WebGL, gamified funnels, interactive microsites & installations where code, design and play intersect.",
       link: "See Interactive Work →",
+      href: "/contact",
     },
   ];
 
@@ -174,9 +178,9 @@ export default function WodhExpertiseTypographyPlus() {
                 {item.desc}
               </p>
               <a
-                href="#case-studies"
+                href={item.href}
                 className="mt-2 text-[#9EF315] text-[10px] md:text-xs border-b border-[#9EF315] 
-                hover:text-white hover:border-white transition-colors"
+                hover:text-white hover:border-white transition-colors pointer-events-auto"
               >
                 {item.link}
               </a>

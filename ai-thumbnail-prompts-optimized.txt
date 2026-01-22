@@ -1,0 +1,505 @@
+🎨 AI THUMBNAIL GENERATION PROMPTS
+================================================================================
+
+Use these prompts with ChatGPT (DALL-E), Midjourney, or any AI image generator.
+Each prompt is optimized to create a thumbnail that explains the project concept.
+
+
+================================================================================
+PROJECT 1: TraceAR City Portal
+Category: XR | City-Scale AR
+Concept: City-scale AR layered calmly onto real streets.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "TraceAR City Portal": City-scale AR layered calmly onto real streets.. A persistent XR framework for navigation, retail and storytelling that feels like a natural extensio. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: trace3d-city-portal.jpg
+LOCATION: /public/images/thumbnails/trace3d-city-portal.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 2: HAKI Scaffolding VR
+Category: XR | Industrial Training
+Concept: VR safety training for industrial scaffolding systems.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "HAKI Scaffolding VR": VR safety training for industrial scaffolding systems.. An immersive VR training platform developed for HAKI, the global leader in scaffolding systems. Work. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: haki-scaffolding-vr.jpg
+LOCATION: /public/images/thumbnails/haki-scaffolding-vr.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 3: Point Cloud Mesh Generation
+Category: XR | LiDAR Technology
+Concept: Real-time LiDAR mesh generation for spatial computing.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Point Cloud Mesh Generation": Real-time LiDAR mesh generation for spatial computing.. Advanced point cloud processing system that converts LiDAR sensor data into optimized 3D meshes in r. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: point-cloud-mesh-generation.jpg
+LOCATION: /public/images/thumbnails/point-cloud-mesh-generation.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 4: TopDown VR
+Category: XR | VR Experience
+Concept: Immersive top-down VR perspective gameplay.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "TopDown VR": Immersive top-down VR perspective gameplay.. A unique VR experience that combines top-down strategic gameplay with immersive virtual reality. Pla. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: topdown-vr.jpg
+LOCATION: /public/images/thumbnails/topdown-vr.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 5: WebGL Rocket Simulation
+Category: XR | Web Simulation
+Concept: Physics-accurate rocket simulation in the browser.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "WebGL Rocket Simulation": Physics-accurate rocket simulation in the browser.. A WebGL-based rocket simulation featuring realistic physics, trajectory calculations, and interactiv. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: webgl-rocket-simulation.jpg
+LOCATION: /public/images/thumbnails/webgl-rocket-simulation.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 6: Zombie Game VR
+Category: XR | VR Shooter
+Concept: Survive the undead apocalypse in immersive VR.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Zombie Game VR": Survive the undead apocalypse in immersive VR.. A terrifying VR zombie shooter where players must survive waves of undead using realistic weapon mec. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: zombie-game-vr.jpg
+LOCATION: /public/images/thumbnails/zombie-game-vr.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 7: VR Physical Keyboard
+Category: XR | VR Utility
+Concept: Type naturally in VR with physical keyboard tracking.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "VR Physical Keyboard": Type naturally in VR with physical keyboard tracking.. A VR application that tracks your physical keyboard in virtual reality, allowing seamless typing wit. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: vr-physical-keyboard.jpg
+LOCATION: /public/images/thumbnails/vr-physical-keyboard.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 8: VR Fall Guys
+Category: XR | VR Party Game
+Concept: Chaotic party game action in immersive VR.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "VR Fall Guys": Chaotic party game action in immersive VR.. A VR party game inspired by Fall Guys, featuring physics-based obstacle courses, multiplayer mayhem,. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: vr-fall-guys.jpg
+LOCATION: /public/images/thumbnails/vr-fall-guys.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 9: OSR Star Finder
+Category: XR | AR Application
+Concept: Find your registered star in the night sky with AR.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "OSR Star Finder": Find your registered star in the night sky with AR.. An augmented reality app that helps users locate their registered stars in the Online Star Registry.. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: osr-star-finder.jpg
+LOCATION: /public/images/thumbnails/osr-star-finder.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 10: AvaSci
+Category: XR | Avatar Technology
+Concept: Advanced avatar science for immersive experiences.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "AvaSci": Advanced avatar science for immersive experiences.. Cutting-edge avatar technology platform enabling realistic digital human creation, motion capture in. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: avasci.jpg
+LOCATION: /public/images/thumbnails/avasci.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 11: Product Simulation
+Category: XR | Product Visualization
+Concept: Interactive 3D product configuration and visualization.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Product Simulation": Interactive 3D product configuration and visualization.. A product simulation platform allowing customers to configure, customize, and visualize products in . futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: product-simulation.jpg
+LOCATION: /public/images/thumbnails/product-simulation.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 12: VR RCC
+Category: XR | VR Racing
+Concept: Realistic car controller experience in VR.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "VR RCC": Realistic car controller experience in VR.. A VR racing experience featuring the Realistic Car Controller system. Feel every bump, drift, and ac. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: vr-rcc.jpg
+LOCATION: /public/images/thumbnails/vr-rcc.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 13: Hospital VR Simulation
+Category: XR | Medical Training
+Concept: Medical training simulation in immersive VR.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Hospital VR Simulation": Medical training simulation in immersive VR.. A comprehensive VR simulation for healthcare professionals to practice procedures, patient interacti. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: hospital-vr-simulation.jpg
+LOCATION: /public/images/thumbnails/hospital-vr-simulation.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 14: AR Measuring Tape
+Category: XR | AR Utility
+Concept: Measure anything in the real world using AR.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "AR Measuring Tape": Measure anything in the real world using AR.. A precision AR measuring application that uses device sensors and AR technology to measure distances. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: ar-measuring-tape.jpg
+LOCATION: /public/images/thumbnails/ar-measuring-tape.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 15: AR Museum Game
+Category: XR | AR Experience
+Concept: Bring museum exhibits to life with AR gamification.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "AR Museum Game": Bring museum exhibits to life with AR gamification.. An augmented reality game that transforms museum visits into interactive adventures. Scan exhibits t. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: ar-museum-game.jpg
+LOCATION: /public/images/thumbnails/ar-museum-game.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 16: Kinect Runner
+Category: XR | Motion Gaming
+Concept: Full-body motion gaming with Kinect tracking.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Kinect Runner": Full-body motion gaming with Kinect tracking.. An endless runner game controlled entirely by body movements using Kinect sensor technology. Jump, d. futuristic high-tech neon green accents dark background immersive technology virtual reality augmented reality sci-fi aesthetic, professional game thumbnail style, visually striking. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: kinect-runner.jpg
+LOCATION: /public/images/thumbnails/kinect-runner.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 17: Soul of King
+Category: Game | MOBA
+Concept: Epic MOBA battles with strategic depth.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Soul of King": Epic MOBA battles with strategic depth.. A multiplayer online battle arena game featuring unique heroes, strategic team play, and competitive. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: soul-of-king.jpg
+LOCATION: /public/images/thumbnails/soul-of-king.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 18: Handpan Hero
+Category: Game | Music Rhythm
+Concept: Master the handpan through rhythm-based gameplay.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Handpan Hero": Master the handpan through rhythm-based gameplay.. A unique music game that teaches players to play the handpan instrument through rhythm-based challen. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: handpan-hero.jpg
+LOCATION: /public/images/thumbnails/handpan-hero.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 19: Star Fox Rework
+Category: Game | Space Shooter
+Concept: Classic space combat reimagined with modern graphics.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Star Fox Rework": Classic space combat reimagined with modern graphics.. A modern reimagining of the classic Star Fox gameplay with updated graphics, new mechanics, and enha. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: star-fox-rework.jpg
+LOCATION: /public/images/thumbnails/star-fox-rework.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 20: Electric Mods
+Category: Game | Racing
+Concept: Electric vehicle racing with extensive customization.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Electric Mods": Electric vehicle racing with extensive customization.. A racing game focused on electric vehicles with deep customization options. Modify performance, aest. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: electric-mods.jpg
+LOCATION: /public/images/thumbnails/electric-mods.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 21: BeamNG Destruction System
+Category: Game | Physics Simulation
+Concept: Soft-body vehicle destruction physics system.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "BeamNG Destruction System": Soft-body vehicle destruction physics system.. A realistic soft-body physics destruction system inspired by BeamNG. Vehicles deform realistically u. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: beam-ng-destruction-system.jpg
+LOCATION: /public/images/thumbnails/beam-ng-destruction-system.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 22: Multiplayer Shooting
+Category: Game | FPS Multiplayer
+Concept: Competitive multiplayer FPS action.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Multiplayer Shooting": Competitive multiplayer FPS action.. A fast-paced multiplayer first-person shooter with various game modes, weapon loadouts, and competit. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: multiplayer-shooting.jpg
+LOCATION: /public/images/thumbnails/multiplayer-shooting.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 23: Project Racer
+Category: Game | Arcade Racing
+Concept: Competitive racing with tight, replayable sessions.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Project Racer": Competitive racing with tight, replayable sessions.. Multiplayer-ready arcade racing with reactive tracks, precise controls and a clean, console-inspired. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: project-racer.jpg
+LOCATION: /public/images/thumbnails/project-racer.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 24: Medieval Lands
+Category: Game | Action RPG
+Concept: Epic medieval adventure with deep RPG mechanics.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Medieval Lands": Epic medieval adventure with deep RPG mechanics.. An action RPG set in a sprawling medieval world. Features combat, crafting, quests, and a rich story. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: medieval-lands.jpg
+LOCATION: /public/images/thumbnails/medieval-lands.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 25: Dandera Quest
+Category: Game | Adventure
+Concept: Ancient Egyptian adventure with puzzle elements.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Dandera Quest": Ancient Egyptian adventure with puzzle elements.. An adventure game set in ancient Egypt's Dendera temple complex. Solve puzzles, uncover secrets, and. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: dandera-quest.jpg
+LOCATION: /public/images/thumbnails/dandera-quest.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 26: Hyper Casual Bus Sort
+Category: Game | Hyper Casual
+Concept: Addictive bus sorting puzzle gameplay.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Hyper Casual Bus Sort": Addictive bus sorting puzzle gameplay.. A hyper-casual puzzle game where players sort passengers onto the correct buses. Simple mechanics wi. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: hyper-casual-bus-sort.jpg
+LOCATION: /public/images/thumbnails/hyper-casual-bus-sort.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 27: Hyper Casual Runner
+Category: Game | Hyper Casual
+Concept: Endless running with simple swipe controls.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Hyper Casual Runner": Endless running with simple swipe controls.. An endless runner with satisfying progression, collectibles, and obstacles. Simple swipe controls ma. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: hyper-casual-runner.jpg
+LOCATION: /public/images/thumbnails/hyper-casual-runner.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 28: Genetiq
+Category: Game | Strategy
+Concept: Genetic evolution strategy game.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Genetiq": Genetic evolution strategy game.. A strategy game where players evolve creatures through genetic manipulation. Combine traits, adapt t. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: genetiq.jpg
+LOCATION: /public/images/thumbnails/genetiq.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 29: Typing Online
+Category: Game | Educational
+Concept: Competitive online typing races.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Typing Online": Competitive online typing races.. A multiplayer typing game where players compete in real-time typing races. Improve your typing speed. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: typing-online.jpg
+LOCATION: /public/images/thumbnails/typing-online.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 30: Realistic 3rd Person Warrior Game
+Category: Game | Action
+Concept: Visceral third-person melee combat.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Realistic 3rd Person Warrior Game": Visceral third-person melee combat.. A third-person action game featuring realistic warrior combat with weighty animations, tactical comb. vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: realistic-3rd-person-warrior-game.jpg
+LOCATION: /public/images/thumbnails/realistic-3rd-person-warrior-game.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 31: Office Simulator
+Category: Game | Simulation
+Concept: Chaotic office management simulation.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Office Simulator": Chaotic office management simulation.. A hyper-casual simulation game where players manage a chaotic office. Complete tasks, handle office . vibrant gaming aesthetic dynamic action purple blue color scheme energetic game design professional thumbnail, bold and eye-catching, game art style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: office-simulator-hyper-casual.jpg
+LOCATION: /public/images/thumbnails/office-simulator-hyper-casual.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 32: 3D World Hologram Shader
+Category: 3D | Blender / Shader Development
+Concept: Stunning holographic shader effects in Blender.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "3D World Hologram Shader": Stunning holographic shader effects in Blender.. A custom shader package that creates beautiful holographic effects for 3D worlds. Features scan line. cinematic photorealistic golden warm lighting artistic 3D rendering professional VFX quality, movie poster style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: 3d-world-hologram-shader.jpg
+LOCATION: /public/images/thumbnails/3d-world-hologram-shader.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 33: Realistic 3D Cinematic
+Category: 3D | Cinematic
+Concept: Photorealistic cinematics powered by Unreal Engine.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Realistic 3D Cinematic": Photorealistic cinematics powered by Unreal Engine.. A showcase of photorealistic 3D cinematics created with Unreal Engine 5. Features Lumen lighting, Na. cinematic photorealistic golden warm lighting artistic 3D rendering professional VFX quality, movie poster style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: realistic-3d-cinematic-unreal.jpg
+LOCATION: /public/images/thumbnails/realistic-3d-cinematic-unreal.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 34: Mobile Game Ready 3D Assets
+Category: 3D | Asset Pack
+Concept: Optimized 3D assets for mobile game development.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Mobile Game Ready 3D Assets": Optimized 3D assets for mobile game development.. A comprehensive pack of 3D assets optimized for mobile games. Includes characters, environments, pro. cinematic photorealistic golden warm lighting artistic 3D rendering professional VFX quality, movie poster style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: mobile-game-ready-3d-assets.jpg
+LOCATION: /public/images/thumbnails/mobile-game-ready-3d-assets.jpg
+
+--------------------------------------------------------------------------------
+
+================================================================================
+PROJECT 35: Transformer Robot 3D Model
+Category: 3D | Character Art
+Concept: Detailed transformer robot with full animation rig.
+================================================================================
+
+PROMPT:
+Professional thumbnail for "Transformer Robot 3D Model": Detailed transformer robot with full animation rig.. A high-quality 3D transformer robot model with complete transformation animation. Features detailed . cinematic photorealistic golden warm lighting artistic 3D rendering professional VFX quality, movie poster style. 16:9 aspect ratio, high quality, visually explains the project concept clearly, professional portfolio thumbnail design
+
+SAVE AS: transformer-robot-3d-model-animation.jpg
+LOCATION: /public/images/thumbnails/transformer-robot-3d-model-animation.jpg
+
+--------------------------------------------------------------------------------
+
+
+💡 INSTRUCTIONS:
+1. Copy each prompt above
+2. Paste into ChatGPT (with DALL-E), Midjourney, or similar AI image generator
+3. Generate the image
+4. Download and save to: /public/images/thumbnails/[slug].jpg
+5. After all images are generated, run: node update-thumbnails.js
+

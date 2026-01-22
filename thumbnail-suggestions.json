@@ -1,0 +1,189 @@
+[
+  {
+    "id": "trace3d",
+    "title": "TraceAR City Portal",
+    "category": "XR",
+    "tagline": "City-scale AR layered calmly onto real streets.",
+    "description": "A persistent XR framework for navigation, retail and storytelling that feels like a natural extension of the city. TraceAR brings digital experiences to physical locations with seamless AR overlays.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "TraceAR City Portal: City-scale AR layered calmly onto real streets.. A persistent XR framework for navigation, retail and storytelling that feels like a natural extensio. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "tracear city portal City-scale AR layered calmly onto futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "point-cloud-mesh",
+    "title": "Point Cloud Mesh Generation",
+    "category": "XR",
+    "tagline": "Real-time LiDAR mesh generation for spatial computing.",
+    "description": "Advanced point cloud processing system that converts LiDAR sensor data into optimized 3D meshes in real-time. Built for spatial mapping, industrial inspection, and AR applications.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Point Cloud Mesh Generation: Real-time LiDAR mesh generation for spatial computing.. Advanced point cloud processing system that converts LiDAR sensor data into optimized 3D meshes in r. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "point cloud mesh generation Real-time LiDAR mesh generation for futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "webgl-rocket-simulation",
+    "title": "WebGL Rocket Simulation",
+    "category": "XR",
+    "tagline": "Physics-accurate rocket simulation in the browser.",
+    "description": "A WebGL-based rocket simulation featuring realistic physics, trajectory calculations, and interactive controls. Built for educational purposes to teach orbital mechanics.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=85",
+    "aiPrompt": "WebGL Rocket Simulation: Physics-accurate rocket simulation in the browser.. A WebGL-based rocket simulation featuring realistic physics, trajectory calculations, and interactiv. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "webgl rocket simulation Physics-accurate rocket simulation in the futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "vr-physical-keyboard",
+    "title": "VR Physical Keyboard",
+    "category": "XR",
+    "tagline": "Type naturally in VR with physical keyboard tracking.",
+    "description": "A VR application that tracks your physical keyboard in virtual reality, allowing seamless typing without removing your headset. Perfect for productivity in VR workspaces.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "VR Physical Keyboard: Type naturally in VR with physical keyboard tracking.. A VR application that tracks your physical keyboard in virtual reality, allowing seamless typing wit. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "vr physical keyboard Type naturally in VR with futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "osr-star-finder",
+    "title": "OSR Star Finder",
+    "category": "XR",
+    "tagline": "Find your registered star in the night sky with AR.",
+    "description": "An augmented reality app that helps users locate their registered stars in the Online Star Registry. Point your phone at the sky to discover constellations and find your personal star.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "OSR Star Finder: Find your registered star in the night sky with AR.. An augmented reality app that helps users locate their registered stars in the Online Star Registry.. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "osr star finder Find your registered star in futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "product-simulation",
+    "title": "Product Simulation",
+    "category": "XR",
+    "tagline": "Interactive 3D product configuration and visualization.",
+    "description": "A product simulation platform allowing customers to configure, customize, and visualize products in real-time 3D. Used for e-commerce, showrooms, and sales presentations.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Product Simulation: Interactive 3D product configuration and visualization.. A product simulation platform allowing customers to configure, customize, and visualize products in . Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "product simulation Interactive 3D product configuration and futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "hospital-vr-simulation",
+    "title": "Hospital VR Simulation",
+    "category": "XR",
+    "tagline": "Medical training simulation in immersive VR.",
+    "description": "A comprehensive VR simulation for healthcare professionals to practice procedures, patient interactions, and emergency responses in a realistic hospital environment.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Hospital VR Simulation: Medical training simulation in immersive VR.. A comprehensive VR simulation for healthcare professionals to practice procedures, patient interacti. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "hospital vr simulation Medical training simulation in immersive futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "ar-museum-game",
+    "title": "AR Museum Game",
+    "category": "XR",
+    "tagline": "Bring museum exhibits to life with AR gamification.",
+    "description": "An augmented reality game that transforms museum visits into interactive adventures. Scan exhibits to unlock stories, solve puzzles, and collect virtual artifacts.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "AR Museum Game: Bring museum exhibits to life with AR gamification.. An augmented reality game that transforms museum visits into interactive adventures. Scan exhibits t. Style: futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "searchKeywords": "ar museum game Bring museum exhibits to life futuristic immersive virtual reality augmented reality high-tech neon green dark background",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1554907984-15263bfd63bd?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "soul-of-king",
+    "title": "Soul of King",
+    "category": "Game",
+    "tagline": "Epic MOBA battles with strategic depth.",
+    "description": "A multiplayer online battle arena game featuring unique heroes, strategic team play, and competitive ranked matches. Built for both casual and hardcore players.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Soul of King: Epic MOBA battles with strategic depth.. A multiplayer online battle arena game featuring unique heroes, strategic team play, and competitive. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "soul of king Epic MOBA battles with strategic gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "star-fox-rework",
+    "title": "Star Fox Rework",
+    "category": "Game",
+    "tagline": "Classic space combat reimagined with modern graphics.",
+    "description": "A modern reimagining of the classic Star Fox gameplay with updated graphics, new mechanics, and enhanced controls while maintaining the nostalgic feel of the original.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Star Fox Rework: Classic space combat reimagined with modern graphics.. A modern reimagining of the classic Star Fox gameplay with updated graphics, new mechanics, and enha. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "star fox rework Classic space combat reimagined with gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "beam-ng-destruction",
+    "title": "BeamNG Destruction System",
+    "category": "Game",
+    "tagline": "Soft-body vehicle destruction physics system.",
+    "description": "A realistic soft-body physics destruction system inspired by BeamNG. Vehicles deform realistically upon impact with accurate crumple zones and damage modeling.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1552820728-8b83bb6b2b11?auto=format&fit=crop&w=1200&q=85",
+    "aiPrompt": "BeamNG Destruction System: Soft-body vehicle destruction physics system.. A realistic soft-body physics destruction system inspired by BeamNG. Vehicles deform realistically u. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "beamng destruction system Soft-body vehicle destruction physics system. gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "project-racer",
+    "title": "Project Racer",
+    "category": "Game",
+    "tagline": "Competitive racing with tight, replayable sessions.",
+    "description": "Multiplayer-ready arcade racing with reactive tracks, precise controls and a clean, console-inspired interface. Designed for quick matches and long-term progression.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Project Racer: Competitive racing with tight, replayable sessions.. Multiplayer-ready arcade racing with reactive tracks, precise controls and a clean, console-inspired. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "project racer Competitive racing with tight, replayable gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "dandera-quest",
+    "title": "Dandera Quest",
+    "category": "Game",
+    "tagline": "Ancient Egyptian adventure with puzzle elements.",
+    "description": "An adventure game set in ancient Egypt's Dendera temple complex. Solve puzzles, uncover secrets, and explore beautifully recreated historical environments.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Dandera Quest: Ancient Egyptian adventure with puzzle elements.. An adventure game set in ancient Egypt's Dendera temple complex. Solve puzzles, uncover secrets, and. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "dandera quest Ancient Egyptian adventure with puzzle gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "hyper-casual-runner",
+    "title": "Hyper Casual Runner",
+    "category": "Game",
+    "tagline": "Endless running with simple swipe controls.",
+    "description": "An endless runner with satisfying progression, collectibles, and obstacles. Simple swipe controls make it accessible while challenging gameplay keeps players engaged.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Hyper Casual Runner: Endless running with simple swipe controls.. An endless runner with satisfying progression, collectibles, and obstacles. Simple swipe controls ma. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "hyper casual runner Endless running with simple swipe gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "typing-online",
+    "title": "Typing Online",
+    "category": "Game",
+    "tagline": "Competitive online typing races.",
+    "description": "A multiplayer typing game where players compete in real-time typing races. Improve your typing speed and accuracy while competing against players worldwide.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Typing Online: Competitive online typing races.. A multiplayer typing game where players compete in real-time typing races. Improve your typing speed. Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "typing online Competitive online typing races. gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "office-simulator",
+    "title": "Office Simulator",
+    "category": "Game",
+    "tagline": "Chaotic office management simulation.",
+    "description": "A hyper-casual simulation game where players manage a chaotic office. Complete tasks, handle office drama, and try not to get fired in this humorous take on office life.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Office Simulator: Chaotic office management simulation.. A hyper-casual simulation game where players manage a chaotic office. Complete tasks, handle office . Style: gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "searchKeywords": "office simulator Chaotic office management simulation. gaming interactive dynamic action-packed vibrant colors purple blue energetic",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85"
+  },
+  {
+    "id": "realistic-3d-cinematic",
+    "title": "Realistic 3D Cinematic",
+    "category": "3D",
+    "tagline": "Photorealistic cinematics powered by Unreal Engine.",
+    "description": "A showcase of photorealistic 3D cinematics created with Unreal Engine 5. Features Lumen lighting, Nanite geometry, and film-quality visual effects.",
+    "currentThumbnail": "https://images.unsplash.com/photo-1616499452581-cc7f8e3dd3c9?auto=format&fit=crop&w=800&q=70",
+    "aiPrompt": "Realistic 3D Cinematic: Photorealistic cinematics powered by Unreal Engine.. A showcase of photorealistic 3D cinematics created with Unreal Engine 5. Features Lumen lighting, Na. Style: 3D rendering cinematic photorealistic artistic detailed golden warm lighting",
+    "searchKeywords": "realistic 3d cinematic Photorealistic cinematics powered by Unreal 3D rendering cinematic photorealistic artistic detailed golden warm lighting",
+    "suggestedThumbnail": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=1200&q=85"
+  }
+]

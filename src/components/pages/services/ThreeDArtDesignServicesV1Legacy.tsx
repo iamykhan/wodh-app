@@ -763,49 +763,7 @@ export default function ThreeDArtDesignServicesV1Legacy() {
         />
       </div>
 
-      {/* Sticky Top Nav */}
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-[rgba(12,7,34,.55)] backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-xl border border-white/10 bg-white/5" />
-            <div className="leading-tight">
-              <div className="text-xs text-white/55">WODH • 3D Studio</div>
-              <div className="text-sm font-semibold tracking-[-0.01em] text-white">
-                3D Art & Design Services
-              </div>
-            </div>
-          </div>
-
-          <nav className="hidden items-center gap-2 md:flex">
-            {NAV.map((n) => (
-              <a
-                key={n.id}
-                href={`#${n.id}`}
-                className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70 hover:bg-white/10"
-              >
-                {n.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className="flex items-center gap-2">
-            <a
-              href="#portfolio"
-              className="rounded-full border border-[rgba(247,184,75,.25)] bg-[rgba(247,184,75,.08)] px-3 py-1.5 text-xs text-[rgba(255,213,122,.92)] hover:bg-[rgba(247,184,75,.12)]"
-            >
-              View Portfolio
-            </a>
-            <a
-              href="#cta"
-              className="rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-xs text-white hover:bg-white/15"
-            >
-              Get a Quote
-            </a>
-          </div>
-        </div>
-      </header>
-
-      <main className="relative mx-auto max-w-6xl px-4 pb-24 pt-10 sm:px-6 sm:pt-14">
+      <main className="relative mx-auto max-w-6xl px-4 pb-24 pt-24 sm:px-6 sm:pt-28">
         {/* =========================
            SECTION 1 — HERO (id=hero)
         ========================== */}

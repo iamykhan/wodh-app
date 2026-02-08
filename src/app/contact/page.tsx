@@ -210,7 +210,7 @@ function Hero_NeonCommandCenter() {
   return (
     <section className="relative overflow-hidden bg-[#0C0722] text-white">
       <HeroBackdrop />
-      <Container className="relative pt-14 pb-16 sm:pt-16 sm:pb-20">
+      <Container className="relative pt-24 pb-16 sm:pt-28 sm:pb-20">
         <HeroParticles />
 
         <div className="grid items-center gap-10 lg:grid-cols-[1.12fr_0.88fr]">

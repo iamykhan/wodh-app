@@ -846,43 +846,7 @@ function CareersWodhGuildStudioMagazine() {
       </div>
 
       <main className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="sticky top-3 z-30 pt-3">
-          <div className="rounded-2xl border border-white/10 bg-black/35 backdrop-blur-md px-3 py-2 shadow-[0_18px_70px_rgba(0,0,0,.35)]">
-            <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-              <div className="flex items-center justify-between gap-3 md:justify-start">
-                <div className="text-xs tracking-[0.28em] uppercase text-white/55">Wodh Guild • Careers</div>
-                <div className="hidden items-center gap-2 md:flex">
-                  <span className={cx("h-[6px] w-[6px] rounded-full", toneClasses(navAccent).dot)} />
-                  <span className="text-xs text-white/60">Studio Magazine</span>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-2">
-                {nav.map((n) => (
-                  <button
-                    key={n.k}
-                    onClick={() => jumpTo(n.ref)}
-                    className="rounded-full border border-white/12 bg-white/[0.03] px-3 py-1.5 text-xs text-white/75 transition hover:bg-white/[0.07] hover:text-white/90"
-                  >
-                    {n.k}
-                  </button>
-                ))}
-                <span className="mx-1 hidden h-4 w-px bg-white/10 md:block" />
-                <Chip tone="xr" active={activeStudio === "XR"} onClick={() => setActiveStudio((s) => (s === "XR" ? "All" : "XR"))}>
-                  XR
-                </Chip>
-                <Chip tone="games" active={activeStudio === "Games"} onClick={() => setActiveStudio((s) => (s === "Games" ? "All" : "Games"))}>
-                  Games
-                </Chip>
-                <Chip tone="hybrid" active={activeStudio === "Hybrid"} onClick={() => setActiveStudio((s) => (s === "Hybrid" ? "All" : "Hybrid"))}>
-                  Hybrid
-                </Chip>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <section className="pb-12 pt-10 md:pt-16" ref={coverRef}>
+        <section className="pb-12 pt-24 md:pt-28" ref={coverRef}>
           <HeroCover onJump={jumpTo} rolesRef={rolesRef} cultureRef={cultureRef} />
         </section>
 

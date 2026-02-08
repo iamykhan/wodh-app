@@ -118,9 +118,6 @@ export default function XRServices357Legacy() {
     <main className="relative min-h-screen bg-[#0C0722] text-white">
       <GlobalAtmosphere reduceMotion={reduceMotion} />
 
-      {/* Top utility: subtle anchor nav (keeps page feeling “crafted”) */}
-      <TopAnchorNav sections={SECTIONS} />
-
       <div className="relative">
         {/* ===================================================================================
             SECTION 1 — Hero (xr-hero)
@@ -244,91 +241,6 @@ function GlobalAtmosphere({ reduceMotion }: { reduceMotion: boolean }) {
 }
 
 /* =======================================================================================
-   GLOBAL — TOP ANCHOR NAV
-======================================================================================= */
-
-function TopAnchorNav({
-  sections,
-}: {
-  sections: Array<{ id: string; label: string }>;
-}) {
-  const [active, setActive] = useState<string>("xr-hero");
-  const mounted = useMounted();
-
-  useEffect(() => {
-    if (!mounted) return;
-
-    const ids = sections.map((s) => s.id);
-    const els = ids
-      .map((id) => document.getElementById(id))
-      .filter(Boolean) as HTMLElement[];
-
-    if (!els.length) return;
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        // pick the most visible
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0))[0];
-        if (visible?.target?.id) setActive(visible.target.id);
-      },
-      { root: null, threshold: [0.2, 0.35, 0.5], rootMargin: "-12% 0px -70% 0px" }
-    );
-
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, [mounted, sections]);
-
-  return (
-    <div className="sticky top-0 z-40 border-b border-white/10 bg-[#0C0722]/70 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-        <Link href="/" className="group flex items-center gap-2">
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg border border-white/15 bg-white/5">
-            <span className="h-2.5 w-2.5 rounded-full bg-[#9EF315] shadow-[0_0_18px_rgba(158,243,21,0.75)]" />
-          </span>
-          <span className="text-sm font-medium tracking-[-0.01em] text-white/90 group-hover:text-white">
-            Wodh XR
-          </span>
-        </Link>
-
-        <div className="hidden flex-wrap items-center gap-1.5 md:flex">
-          {sections.map((s) => (
-            <a
-              key={s.id}
-              href={`#${s.id}`}
-              className={cx(
-                "rounded-full px-3 py-1 text-xs transition",
-                active === s.id
-                  ? "border border-[#9EF315]/35 bg-[#9EF315]/10 text-white shadow-[0_0_18px_rgba(158,243,21,0.28)]"
-                  : "border border-white/10 bg-white/5 text-white/70 hover:border-white/20 hover:text-white"
-              )}
-            >
-              {s.label}
-            </a>
-          ))}
-        </div>
-
-        <div className="flex items-center gap-2">
-          <a
-            href="#xr-portfolio"
-            className="hidden rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs text-white/80 hover:border-white/25 hover:text-white sm:inline-flex"
-          >
-            See work
-          </a>
-          <a
-            href="#xr-faq"
-            className="rounded-full border border-[#9EF315]/35 bg-[#9EF315]/10 px-3 py-1.5 text-xs font-medium text-white shadow-[0_0_22px_rgba(158,243,21,0.25)] hover:bg-[#9EF315]/14"
-          >
-            Ask a question
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* =======================================================================================
    SECTION 1 — HERO (xr-hero)
    Pattern: Equal-height editorial + snapshot (HERO_IDEA_1_EQUAL_HEIGHT)
 ======================================================================================= */
@@ -344,7 +256,7 @@ function XR_Hero() {
   ];
 
   return (
-    <section id="xr-hero" className={cx("relative mx-auto w-full max-w-6xl px-4 sm:px-6", "pt-14 sm:pt-20 pb-10 sm:pb-14")}>
+    <section id="xr-hero" className={cx("relative mx-auto w-full max-w-6xl px-4 sm:px-6", "pt-24 sm:pt-28 pb-10 sm:pb-14")}>
       <motion.div
         initial={{ opacity: 0, y: reduceMotion ? 0 : 12 }}
         animate={{ opacity: 1, y: 0 }}

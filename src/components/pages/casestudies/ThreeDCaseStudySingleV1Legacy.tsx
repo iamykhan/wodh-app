@@ -407,64 +407,9 @@ export default function ThreeDCaseStudySingleV1Legacy() {
         <div className="absolute inset-0 opacity-[0.06] [background-image:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22120%22%20height%3D%22120%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.8%22%20numOctaves%3D%222%22/%3E%3C/filter%3E%3Crect%20width%3D%22120%22%20height%3D%22120%22%20filter%3D%22url(%23n)%22%20opacity%3D%220.7%22/%3E%3C/svg%3E')]" />
       </div>
 
-      {/* STICKY NAV */}
-      <header id="section-topnav" className="sticky top-0 z-40 border-b border-white/10 bg-[#070A14]/55 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-          <div className="flex items-center gap-3">
-            <div
-              className="h-9 w-9 rounded-2xl border border-white/10 bg-white/[0.03]"
-              style={{ boxShadow: `0 18px 80px ${AMBER_GLOW}` }}
-            />
-            <div className="leading-tight">
-              <div className="text-sm font-semibold tracking-wide text-white/90">WODH</div>
-              <div className="text-xs font-medium text-white/55">3D & Art · Portfolio Single</div>
-            </div>
-          </div>
-
-          <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
-            <a className="hover:text-white" href="#section-shots">
-              Shots
-            </a>
-            <a className="hover:text-white" href="#section-breakdown">
-              Breakdown
-            </a>
-            <a className="hover:text-white" href="#section-specs">
-              Specs
-            </a>
-            <a className="hover:text-white" href="#section-tools">
-              Tools
-            </a>
-            <a className="hover:text-white" href="#section-delivery">
-              Delivery
-            </a>
-            <a className="hover:text-white" href="#section-related">
-              Related
-            </a>
-          </nav>
-
-          <Link
-            href="#section-contact"
-            className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm font-semibold text-white/85 hover:bg-white/[0.06]"
-            style={{ boxShadow: `0 16px 60px ${AMBER_GLOW}` }}
-          >
-            Contact
-          </Link>
-        </div>
-
-        <div className="h-[2px] w-full bg-white/5">
-          <motion.div
-            className="h-[2px]"
-            style={{
-              width: useTransform(scrollYProgress, (v) => `${Math.max(0, Math.min(100, v * 100))}%`),
-              background: "linear-gradient(90deg, rgba(247,201,72,0.35), rgba(247,201,72,0.95))",
-            }}
-          />
-        </div>
-      </header>
-
       {/* HERO */}
       <section id="section-hero" className="relative z-10">
-        <div className="mx-auto max-w-7xl px-5 pt-10 md:px-8 md:pt-14">
+        <div className="mx-auto max-w-7xl px-5 pt-24 md:px-8 md:pt-28">
           <motion.div style={{ scale: heroScale, y: heroY }} className="relative">
             <div className="relative overflow-hidden rounded-[2.6rem] border border-white/10 bg-white/[0.03]">
               <div className="relative aspect-[21/9] min-h-[360px]">

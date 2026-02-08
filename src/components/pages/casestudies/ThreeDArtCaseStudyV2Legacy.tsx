@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 /**
  * WODH — 3D & Art Design
@@ -51,9 +52,6 @@ const AMBER = "#F7C948";
 const AMBER_SOFT = "rgba(247, 201, 72, 0.25)";
 const AMBER_GLOW = "rgba(247, 201, 72, 0.18)";
 
-function cn(...classes: Array<string | false | null | undefined>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 function useReducedMotion() {
   const [reduced, setReduced] = useState(false);

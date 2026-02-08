@@ -362,33 +362,22 @@ function IndustriesHeroIndexDetails() {
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <div
-            className="absolute -top-28 -left-28 h-[560px] w-[560px] rounded-full blur-3xl opacity-30"
+            className="absolute -top-56 left-1/2 h-[720px] w-[720px] -translate-x-1/2 rounded-full blur-3xl opacity-35"
             style={{
-              background:
-                "radial-gradient(circle at 30% 30%, rgba(158,243,21,0.9), rgba(158,243,21,0.0) 62%)",
+              background: "radial-gradient(circle, rgba(91,45,220,0.66) 0%, transparent 60%)",
             }}
           />
           <div
-            className="absolute -bottom-32 -right-28 h-[620px] w-[620px] rounded-full blur-3xl opacity-30"
+            className="absolute -bottom-64 right-[-10%] h-[820px] w-[820px] rounded-full blur-3xl opacity-30"
             style={{
-              background:
-                "radial-gradient(circle at 70% 70%, rgba(167,139,250,0.9), rgba(167,139,250,0.0) 64%)",
-            }}
-          />
-          <div
-            className="absolute inset-0 opacity-[0.14]"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px)",
-              backgroundSize: "80px 80px",
-              maskImage: "radial-gradient(circle at 45% 18%, black 0%, black 55%, transparent 78%)",
+              background: "radial-gradient(circle, rgba(158,243,21,0.55) 0%, transparent 65%)",
             }}
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(1200px 520px at 50% 6%, rgba(255,255,255,0.06), rgba(12,7,34,0) 62%), radial-gradient(900px 600px at 50% 100%, rgba(0,0,0,0.28), rgba(0,0,0,0) 62%)",
+                "radial-gradient(1200px 700px at 50% -10%, rgba(91,45,220,0.2), transparent 60%), radial-gradient(1000px 600px at 80% 110%, rgba(158,243,21,0.18), transparent 60%)",
             }}
           />
         </div>

@@ -364,12 +364,7 @@ export default function PortfolioHybridPage() {
     <div
       className="min-h-screen"
       style={{
-        background: `
-          radial-gradient(1200px 800px at 12% 0%, rgba(158,243,21,0.10), transparent 56%),
-          radial-gradient(1000px 700px at 90% 10%, rgba(91,45,220,0.12), transparent 56%),
-          radial-gradient(900px 650px at 60% 110%, rgba(246,183,74,0.08), transparent 60%),
-          linear-gradient(180deg, ${TOKENS.bg0} 0%, ${TOKENS.bg1} 100%)
-        `,
+        background: "#0C0722",
       }}
     >
       <GlobalStyles />

@@ -13,12 +13,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 /* --------------------------------- Utils --------------------------------- */
 
-function cn(...classes: Array<string | undefined | null | false>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 type StudioMode = "all" | "xr" | "games";
 type FooterVariant = "A" | "B" | "C" | "D";

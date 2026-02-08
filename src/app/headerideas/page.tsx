@@ -12,12 +12,10 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 /* --------------------------------- Helpers -------------------------------- */
 
-function cn(...classes: Array<string | undefined | false | null>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 type StudioMode = "all" | "xr" | "games";
 type HeaderVariant = "A" | "B" | "C" | "D" | "E" | "F";

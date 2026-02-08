@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 type Mode = "XR" | "Games";
 
@@ -112,12 +113,12 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
         className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-10 py-3 border-b"
       >
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className="text-xl sm:text-2xl font-extrabold tracking-tight text-white"
         >
           WODH
-        </a>
+        </Link>
 
         {/* Toggle */}
         <div className="hidden md:flex items-center gap-3">
@@ -162,23 +163,27 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
         <nav className="hidden md:flex items-center gap-1">
           <AnimatePresence mode="popLayout">
             {links.map((l) => (
-              <motion.a
+              <Link
                 key={mode + l.label}
                 href={l.href}
-                initial={{ opacity: 0, y: -6 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ duration: 0.18 }}
                 className="group relative px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition"
               >
-                {l.label}
-                <span
-                  className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
-                  style={{
-                    background: `linear-gradient(90deg, ${activeColor}, transparent)`,
-                  }}
-                />
-              </motion.a>
+                <motion.span
+                  initial={{ opacity: 0, y: -6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.18 }}
+                  className="block"
+                >
+                  {l.label}
+                  <span
+                    className="absolute left-2 right-2 -bottom-0.5 h-[2px] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                    style={{
+                      background: `linear-gradient(90deg, ${activeColor}, transparent)`,
+                    }}
+                  />
+                </motion.span>
+              </Link>
             ))}
           </AnimatePresence>
 
@@ -242,7 +247,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
 
                   <div className="relative">
                     {SERVICE_HUB_LINKS.map((link, index) => (
-                      <a
+                      <Link
                         key={link.href}
                         href={link.href}
                         onClick={() => setServiceHubOpen(false)}
@@ -260,7 +265,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                             →
                           </span>
                         </div>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </motion.div>
@@ -328,7 +333,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
 
                   <div className="relative">
                     {SINGLES_LINKS.map((link, index) => (
-                      <a
+                      <Link
                         key={link.href}
                         href={link.href}
                         onClick={() => setSinglesOpen(false)}
@@ -346,7 +351,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                             →
                           </span>
                         </div>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </motion.div>
@@ -414,7 +419,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
 
                   <div className="relative">
                     {THREEDART_CSS_LINKS.map((link, index) => (
-                      <a
+                      <Link
                         key={link.href}
                         href={link.href}
                         onClick={() => setThreedartcssOpen(false)}
@@ -432,7 +437,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
                             →
                           </span>
                         </div>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </motion.div>
@@ -442,7 +447,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
         </nav>
 
         {/* CTA */}
-        <a
+        <Link
           href="/contact"
           className="relative inline-flex items-center justify-center rounded-full px-4 sm:px-5 py-2 text-sm font-semibold text-black transition"
           style={{
@@ -451,7 +456,7 @@ const WodhHeader_OptionB_SplitToggle: React.FC = () => {
           }}
         >
           Start a Project
-        </a>
+        </Link>
       </motion.div>
     </header>
   );

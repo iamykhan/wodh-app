@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import { colors } from "@/lib/design-tokens";
 
 interface GlowConfig {

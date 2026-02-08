@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 
-const WodhCTA_FullWidthGradient_C: React.FC = () => {
+const WodhCTA_FullWidthGradient_C = () => {
   return (
     <section className="relative w-full overflow-hidden bg-[#0C0722] px-4 py-16 text-white sm:px-6 lg:px-10 xl:px-16 lg:py-24">
       {/* Gradient wave backdrop */}

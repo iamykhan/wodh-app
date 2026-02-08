@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import OptionA_PartialEnhanced from "@/components/WodhBlogInsights_OptionA_NeonKnowledgeGrid_PartialEnhanced";
 
 /**

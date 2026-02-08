@@ -6,13 +6,13 @@
 
 "use client";
 
-import React from "react";
+import { ReactNode } from "react";
 import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { colors, rgba } from "@/lib/design-tokens";
 
 interface GlassPanelProps extends Omit<HTMLMotionProps<"div">, "children"> {
-  children: React.ReactNode;
+  children: ReactNode;
   mode?: "xr" | "games" | "neutral";
   hover?: boolean;
   glow?: boolean;

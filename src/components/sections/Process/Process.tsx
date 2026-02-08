@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhProcess_Pipeline_5Step_B_Final from "@/components/WodhProcess_Pipeline_5Step_B_Final";
 
 /**

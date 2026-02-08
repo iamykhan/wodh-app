@@ -6,7 +6,7 @@
 
 "use client";
 
-import React from "react";
+import { useEffect } from "react";
 import { GradientText } from "@/components/ui/GradientText";
 import { colors } from "@/lib/design-tokens";
 import { useIsInViewport } from "@/hooks";
@@ -28,7 +28,7 @@ export function ExpertiseCard({ item, index, onVisible }: ExpertiseCardProps) {
   });
 
   // Notify parent when card becomes visible
-  React.useEffect(() => {
+  useEffect(() => {
     if (isVisible) {
       onVisible(index);
     }

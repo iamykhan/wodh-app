@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhTechnologies_CoreEngines_RowAligned_Hover_AD_Final from "@/components/WodhTechnologies_CoreEngines_RowAligned_Hover_AD_Final";
 
 /**

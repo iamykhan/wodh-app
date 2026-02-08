@@ -4,8 +4,6 @@
  * Extracted from duplicated code across legacy components
  */
 
-import React from "react";
-
 export type IconName =
   | "play"
   | "close"

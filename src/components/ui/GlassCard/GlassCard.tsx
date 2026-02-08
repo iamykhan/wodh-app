@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils/cn";
-import React from "react";
+import { ReactNode } from "react";
 
 interface GlassCardProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
 }
 

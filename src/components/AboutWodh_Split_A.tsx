@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 const NEON = "text-[#9EF315]";
 const VIOLET = "text-[#B9A8FF]";
@@ -10,9 +10,7 @@ const BORDER_COLOR = "border-[#2A1E55]";
 const FONT_STACK =
   'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
 
-const SectionShell: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => (
+const SectionShell = ({ children }: { children: ReactNode }) => (
   <section
     className="w-full bg-[#0C0722] text-white px-4 sm:px-6 lg:px-10 xl:px-16 py-16 lg:py-24"
     style={{ fontFamily: FONT_STACK }}
@@ -21,20 +19,20 @@ const SectionShell: React.FC<{ children: React.ReactNode }> = ({
   </section>
 );
 
-const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const Eyebrow = ({ children }: { children: ReactNode }) => (
   <div className="inline-flex items-center gap-2 rounded-full border border-[#2A1E55] bg-[#0F0A26] px-3 py-1 text-xs font-medium uppercase tracking-[0.2em] text-[#A8A8C3]">
     <span className="h-1.5 w-1.5 rounded-full bg-[#9EF315] shadow-[0_0_12px_rgba(158,243,21,0.9)]" />
     {children}
   </div>
 );
 
-const NeonPill: React.FC<{ label: string }> = ({ label }) => (
+const NeonPill = ({ label }: { label: string }) => (
   <span className="rounded-full border border-[#2A1E55] bg-[#0A061A] px-3 py-1 text-xs text-[#D1C6FF]">
     {label}
   </span>
 );
 
-export const AboutWodh_Split_A: React.FC = () => {
+export const AboutWodh_Split_A = () => {
   return (
     <SectionShell>
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] items-center">

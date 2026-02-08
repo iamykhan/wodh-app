@@ -6,12 +6,12 @@
 
 "use client";
 
-import React from "react";
+import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { colors } from "@/lib/design-tokens";
 
 interface GradientTextProps {
-  children: React.ReactNode;
+  children: ReactNode;
   mode?: "xr" | "games" | "dual";
   as?: "span" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
   className?: string;

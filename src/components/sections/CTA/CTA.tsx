@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhCTA_FullWidthGradient_C from "@/components/WodhCTA_FullWidthGradient_C";
 
 /**

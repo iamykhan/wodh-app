@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhTeam_Core_StaticHomepage_V5_Final from "@/components/WodhTeam_Core_StaticHomepage_V5_Final";
 
 /**

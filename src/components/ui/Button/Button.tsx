@@ -6,7 +6,7 @@
 
 "use client";
 
-import React from "react";
+import { ReactNode } from "react";
 import Link from "next/link";
 import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -14,7 +14,7 @@ import { colors } from "@/lib/design-tokens";
 import { ButtonVariant, ButtonSize, ColorMode } from "./Button.types";
 
 interface ButtonProps extends Omit<HTMLMotionProps<"button">, "children"> {
-  children: React.ReactNode;
+  children: ReactNode;
   href?: string;
   variant?: ButtonVariant;
   size?: ButtonSize;

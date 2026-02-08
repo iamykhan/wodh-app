@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Cuboid,
@@ -81,7 +80,7 @@ const LaneIcon = ({ lane }: { lane: Lane }) => {
   return <CircleDashed size={14} color={NEON} />;
 };
 
-const WodhTeam_Core_StaticHomepage_V5_Final: React.FC = () => {
+const WodhTeam_Core_StaticHomepage_V5_Final = () => {
   return (
     <section
       id="team"

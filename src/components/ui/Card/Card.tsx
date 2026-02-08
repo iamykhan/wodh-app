@@ -6,13 +6,13 @@
 
 "use client";
 
-import React from "react";
+import { ReactNode } from "react";
 import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { colors } from "@/lib/design-tokens";
 
 interface CardProps extends Omit<HTMLMotionProps<"div">, "children"> {
-  children: React.ReactNode;
+  children: ReactNode;
   hover?: boolean;
   padding?: "none" | "small" | "medium" | "large";
   className?: string;

@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhFAQ_CommandPalette_G_Final from "@/components/WodhFAQ_CommandPalette_G_Final";
 
 /**

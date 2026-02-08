@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhFeaturedProjects_Grid_Option3_TetrisEnhanced from "@/components/WodhFeaturedProjects_Grid_Option3_TetrisEnhanced";
 
 /**

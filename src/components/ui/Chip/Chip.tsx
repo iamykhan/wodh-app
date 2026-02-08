@@ -5,12 +5,12 @@
 
 "use client";
 
-import React from "react";
+import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { colors } from "@/lib/design-tokens";
 
 interface ChipProps {
-  children: React.ReactNode;
+  children: ReactNode;
   variant?: "default" | "accent";
   mode?: "xr" | "games";
   className?: string;

@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 const WODH_BG = "#0C0722";
 const WODH_PANEL = "#0F0A26";
 const WODH_BORDER = "#2A1E55";
@@ -116,7 +114,7 @@ function underlineGradient(key: EngineKey) {
   }
 }
 
-const WodhTechnologies_CoreEngines_RowAligned_Hover_AD_Final: React.FC = () => {
+const WodhTechnologies_CoreEngines_RowAligned_Hover_AD_Final = () => {
   return (
     <section
       className="w-full py-20 px-4"
@@ -148,7 +146,7 @@ const WodhTechnologies_CoreEngines_RowAligned_Hover_AD_Final: React.FC = () => {
         {/* 3 aligned rows: LEFT big word + RIGHT card */}
         <div className="grid gap-x-10 gap-y-6 lg:grid-cols-[0.9fr_1.1fr]">
           {ENGINES.map((engine) => (
-            <React.Fragment key={engine.key}>
+            <div key={engine.key} className="contents">
               {/* LEFT – big hero word with neon glow + lift + underline glow */}
               <div className="flex items-stretch">
                 <div className="relative flex h-full items-center">
@@ -191,7 +189,7 @@ const WodhTechnologies_CoreEngines_RowAligned_Hover_AD_Final: React.FC = () => {
 
               {/* RIGHT – engine card */}
               <EngineCard engine={engine} />
-            </React.Fragment>
+            </div>
           ))}
         </div>
       </div>

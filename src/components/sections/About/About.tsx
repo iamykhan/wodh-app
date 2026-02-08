@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import AboutWodh_Split_A from "@/components/AboutWodh_Split_A";
 
 /**

@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Lightbulb,
@@ -51,7 +50,7 @@ const stages = [
   },
 ];
 
-const WodhProcess_Pipeline_5Step_B_Final: React.FC = () => {
+const WodhProcess_Pipeline_5Step_B_Final = () => {
   return (
     <section
       className="relative w-full overflow-hidden px-4 py-16 sm:px-6 lg:px-10 xl:px-16 lg:py-24 text-white"

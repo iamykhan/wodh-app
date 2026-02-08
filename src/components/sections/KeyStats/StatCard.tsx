@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { colors } from "@/lib/design-tokens";
 import { useCountUp } from "@/hooks";

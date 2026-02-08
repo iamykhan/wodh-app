@@ -6,7 +6,6 @@
 
 "use client";
 
-import React from "react";
 import WodhTestimonials_LoudHero_V2_A_UnderButtons_Final from "@/components/WodhTestimonials_LoudHero_V2_A_UnderButtons_Final";
 
 /**

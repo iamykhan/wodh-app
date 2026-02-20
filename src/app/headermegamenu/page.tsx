@@ -10,7 +10,7 @@
  * Optional: framer-motion (used). If you don't want it, tell me and I'll remove.
  */
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";

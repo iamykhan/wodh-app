@@ -1648,7 +1648,6 @@ function TalentNetworkForm() {
   function submit(e: React.FormEvent) {
     e.preventDefault();
     setSent(true);
-    console.log("Talent Network:", { name, email, studio, interest, note });
     setTimeout(() => setSent(false), 2400);
     setName("");
     setEmail("");

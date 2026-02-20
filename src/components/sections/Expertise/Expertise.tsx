@@ -6,7 +6,7 @@
 
 "use client";
 
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { ExpertiseCard } from "./ExpertiseCard";
 import { ParticleField, AmbientGlow } from "@/components/backgrounds";
 import { colors } from "@/lib/design-tokens";

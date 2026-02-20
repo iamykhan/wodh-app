@@ -22,6 +22,7 @@ export const colors = {
   neon: {
     base: "#9EF315",       // Primary neon green
     light: "#B5F750",      // Lighter variant
+    soft: "#E8FFD0",       // Soft/pale green
     glow: "#9EF31555",     // For glow effects (with alpha)
   },
 

@@ -6,7 +6,7 @@
 
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { StatCard } from "./StatCard";
 import { AmbientGlow } from "@/components/backgrounds";

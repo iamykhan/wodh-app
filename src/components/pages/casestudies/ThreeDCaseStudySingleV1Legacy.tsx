@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useReducedMotion } from "@/lib/hooks/useReducedMotion";
 
 /**
  * WODH — 3D & Art Portfolio
@@ -17,18 +18,6 @@ const AMBER = "#F7C948";
 const AMBER_SOFT = "rgba(247, 201, 72, 0.25)";
 const AMBER_GLOW = "rgba(247, 201, 72, 0.18)";
 
-
-function useReducedMotion() {
-  const [reduced, setReduced] = useState(false);
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const onChange = () => setReduced(!!mq.matches);
-    onChange();
-    mq.addEventListener?.("change", onChange);
-    return () => mq.removeEventListener?.("change", onChange);
-  }, []);
-  return reduced;
-}
 
 function dataSvgPlaceholder(label: string) {
   const safe = label.replace(/</g, "&lt;").replace(/>/g, "&gt;");

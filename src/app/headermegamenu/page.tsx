@@ -10,15 +10,13 @@
  * Optional: framer-motion (used). If you don't want it, tell me and I'll remove.
  */
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 /* --------------------------------- Utils --------------------------------- */
 
-function cn(...classes: Array<string | undefined | null | false>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 type StudioMode = "all" | "xr" | "games";
 

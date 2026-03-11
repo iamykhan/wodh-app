@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 import { motion } from "framer-motion";
 
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -102,7 +100,7 @@ const logos = [
 
 
 
-const HeroSection_P1_Revamp_Galaxy: React.FC = () => {
+const HeroSection_P1_Revamp_Galaxy = () => {
 
   return (
 

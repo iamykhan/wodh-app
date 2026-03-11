@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
+import { cn } from "@/lib/utils";
 
 /**
  * Wodh — Constellation Map (Static SVG)
@@ -17,9 +18,6 @@ export type CityKey = "pk" | "uk" | "dubai";
 const ACCENT_GREEN = "rgb(158, 243, 21)";
 const ACCENT_PURPLE = "rgb(91, 45, 220)";
 
-function cn(...classes: Array<string | false | null | undefined>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export function ConstellationMap({
   active,

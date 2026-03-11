@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
 type PillarKey = "XR" | "Games" | "3D" | "CreativeTech";

@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 import {
   ArrowUpRight,
   Sparkles,
@@ -39,10 +39,13 @@ const GlowDivider = () => (
   />
 );
 
-const SectionTitle: React.FC<{
-  icon?: React.ReactNode;
-  children: React.ReactNode;
-}> = ({ icon, children }) => (
+const SectionTitle = ({
+  icon,
+  children,
+}: {
+  icon?: ReactNode;
+  children: ReactNode;
+}) => (
   <h4
     className="inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase font-semibold"
     style={{ color: TEXT_DIM }}
@@ -52,9 +55,12 @@ const SectionTitle: React.FC<{
   </h4>
 );
 
-const FooterLink: React.FC<{ label: string; href?: string }> = ({
+const FooterLink = ({
   label,
   href = "#",
+}: {
+  label: string;
+  href?: string;
 }) => (
   <a
     href={href}
@@ -75,11 +81,15 @@ const FooterLink: React.FC<{ label: string; href?: string }> = ({
   </a>
 );
 
-const SocialBtn: React.FC<{
+const SocialBtn = ({
+  Icon,
+  label,
+  href = "#",
+}: {
   Icon: any;
   label: string;
   href?: string;
-}> = ({ Icon, label, href = "#" }) => (
+}) => (
   <motion.a
     href={href}
     aria-label={label}
@@ -99,7 +109,7 @@ const SocialBtn: React.FC<{
   </motion.a>
 );
 
-const Pill: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+const Pill = ({ children }: { children: ReactNode }) => (
   <span
     className="inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs"
     style={{
@@ -112,13 +122,19 @@ const Pill: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   </span>
 );
 
-const LocationCard: React.FC<{
+const LocationCard = ({
+  city,
+  country,
+  address,
+  phone,
+  timezone,
+}: {
   city: string;
   country: string;
   address: string;
   phone?: string;
   timezone?: string;
-}> = ({ city, country, address, phone, timezone }) => (
+}) => (
   <div
     className="relative rounded-2xl border p-5 overflow-hidden"
     style={{
@@ -180,7 +196,7 @@ const LocationCard: React.FC<{
   </div>
 );
 
-const WodhFooter_MegaBold_Global_Final_Refined_v2: React.FC = () => {
+const WodhFooter_MegaBold_Global_Final_Refined_v2 = () => {
   return (
     <footer className="w-full text-white" style={{ background: BG }}>
       <GlowDivider />

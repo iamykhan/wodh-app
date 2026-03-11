@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 /* =======================================================================================
    WODH — Game Portfolio Single (Case Study)
@@ -16,9 +17,6 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
    - Section IDs included for fast navigation + Cursor search.
 ======================================================================================= */
 
-function cn(...classes: Array<string | false | null | undefined>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 function Icon({
   name,

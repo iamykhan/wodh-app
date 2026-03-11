@@ -364,52 +364,13 @@ export default function PortfolioHybridPage() {
     <div
       className="min-h-screen"
       style={{
-        background: `
-          radial-gradient(1200px 800px at 12% 0%, rgba(158,243,21,0.10), transparent 56%),
-          radial-gradient(1000px 700px at 90% 10%, rgba(91,45,220,0.12), transparent 56%),
-          radial-gradient(900px 650px at 60% 110%, rgba(246,183,74,0.08), transparent 60%),
-          linear-gradient(180deg, ${TOKENS.bg0} 0%, ${TOKENS.bg1} 100%)
-        `,
+        background: "#0C0722",
       }}
     >
       <GlobalStyles />
 
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-xl border border-white/10 bg-white/[0.04]" />
-            <div className="leading-tight">
-              <div className="text-sm font-semibold text-white">Wodh</div>
-              <div className="text-[11px] text-white/55">Portfolio</div>
-            </div>
-          </div>
-
-          <div className="hidden items-center gap-2 sm:flex">
-            <button
-              onClick={() => scrollToId("portfolio-featured")}
-              className="rounded-xl border border-white/10 bg-white/[0.02] px-3 py-2 text-xs text-white/70 hover:bg-white/[0.05]"
-            >
-              Featured
-            </button>
-            <button
-              onClick={() => scrollToId("portfolio-grid")}
-              className="rounded-xl border border-white/10 bg-white/[0.02] px-3 py-2 text-xs text-white/70 hover:bg-white/[0.05]"
-            >
-              Library
-            </button>
-            <a
-              href="/contact"
-              className="rounded-xl border border-white/10 bg-white/[0.02] px-3 py-2 text-xs text-white/70 hover:bg-white/[0.05]"
-            >
-              Contact
-            </a>
-          </div>
-        </div>
-      </header>
-
       {/* SECTION 1 — HERO */}
-      <section id="portfolio-hero" className="relative mx-auto w-full max-w-6xl px-4 pt-10 sm:px-6 sm:pt-12">
+      <section id="portfolio-hero" className="relative mx-auto w-full max-w-6xl px-4 pt-24 sm:px-6 sm:pt-28">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_30px_120px_rgba(0,0,0,0.55)] sm:p-10">
           <Atmosphere />
 

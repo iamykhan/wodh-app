@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 type ProjectCategory = "XR" | "Game" | "R&D";
 
 type Project = {

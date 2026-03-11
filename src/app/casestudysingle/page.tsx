@@ -3,6 +3,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 /* =======================================================================================
    WODH — Game Portfolio Single (Case Study)
@@ -31,9 +32,6 @@ type Chapter = {
   mediaId: string;
 };
 
-function cn(...classes: Array<string | false | null | undefined>) {
-  return classes.filter(Boolean).join(" ");
-}
 
 function Icon({
   name,
